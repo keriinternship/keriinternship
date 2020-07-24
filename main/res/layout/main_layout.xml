@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_player"
+    android:orientation="vertical"
+    >
+   <androidx.drawerlayout.widget.DrawerLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/drawer_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+      <FrameLayout
+          android:id="@+id/drawerContainer"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </FrameLayout>
+      <ListView
+          android:id="@+id/drawerListView"
+          android:layout_width="240dp"
+          android:layout_height="match_parent"
+          android:background="@color/ActionbarDrawer"
+          android:layout_gravity= "start"
+          android:choiceMode="singleChoice"
+          android:divider="@android:color/transparent">
+         <!--        android:entries="@array/spintDefault">-->
+
+      </ListView>
+   </androidx.drawerlayout.widget.DrawerLayout>
+   <include
+       android:id="@+id/toolbar"
+       layout="@layout/toolbar"></include>
+
+
+</RelativeLayout>

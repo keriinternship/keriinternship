@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuanLyVeMayBay</string>
+    <string name="Introduce">Giới Thiệu</string>
+    <string name="information">HeriBooking là 1 website cung cấp dịch vụ đặt và bán vé máy bay trực tuyến của nhiều hãng hàng không khác nhau
+      nhau trong nước.Với giao diện đơn giản dể sự dụng,HeriBooking không chỉ giúp khách hàng nhanh chóng lựa chọn được hành trình
+    mà còn được giá vé tốt nhất trong tháng, so sánh được giá vé giữ các hãng hàng không, đặt và mua được vé trự tuyến. </string>
+    <string name="comments_contribute">
+        Mọi ý kiến đóng góp xin vui lòng gửi về văn phòng CÔNG TY TNHH GIẢI PHÁP PHẦN MỀM ĐIỆN TOÁN ĐÁM MÂY</string>
+    <string name="openDrawer">Mo</string>
+    <string name="closeDrawer">Dong</string>
+
+
+</resources>
