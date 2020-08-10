@@ -10,54 +10,67 @@
     android:layout_margin="6dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:background="@color/colorWhite">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="16dp">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgHangBay"
+            android:layout_width="94dp"
+            android:layout_height="82dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/vt_air">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvDiemDiDiemDen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imgHangBay"
+            android:layout_marginLeft="104dp"
             android:text="Ha Noi - Da Nang"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="16dp"
-            android:textSize="20sp"
-            android:textColor="@color/colorBlack"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvNgayDiNgayDen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvDiemDiDiemDen"
-            android:textSize="15sp"
+            android:layout_below="@+id/tvDiemDiDiemDen"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imgHangBay"
             android:text="03/08/2020 - 13/08/2020"
-            android:textColor="@color/colorBlack">
-        </TextView>
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"></com.google.android.material.textview.MaterialTextView>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvGioXPGioDen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvNgayDiNgayDen"
-            android:textSize="15sp"
+            android:layout_below="@+id/tvNgayDiNgayDen"
+            android:layout_alignLeft="@id/imgHangBay"
+            android:layout_marginLeft="103dp"
+            android:layout_marginTop="15dp"
             android:text="00:00 - 00:00"
-            android:textColor="@color/colorBlack">
-        </TextView>
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"></com.google.android.material.textview.MaterialTextView>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvGiaTien"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="17dp"
             android:padding="16dp"
             android:text="900000"
-            android:textSize="18sp"
-            android:textColor="@color/colorBlack">
-        </TextView>
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"></com.google.android.material.textview.MaterialTextView>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
