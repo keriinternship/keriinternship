@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_air_ticket"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="16dp"
+    android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tvDiemDiDiemDen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ha Noi - Da Nang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tvNgayDiNgayDen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDiemDiDiemDen"
+            android:textSize="15sp"
+            android:text="03/08/2020 - 13/08/2020"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvGioXPGioDen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNgayDiNgayDen"
+            android:textSize="15sp"
+            android:text="00:00 - 00:00"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvGiaTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:text="900000"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
