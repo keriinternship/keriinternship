@@ -51,7 +51,7 @@ public class MainActivity extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.activity_main, container, false);
-        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.bg_anim);
+//        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.bg_anim);
         rvAirTickets = view.findViewById(R.id.rvAirTickets);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
         linearScroll = view.findViewById(R.id.linear_scroll);

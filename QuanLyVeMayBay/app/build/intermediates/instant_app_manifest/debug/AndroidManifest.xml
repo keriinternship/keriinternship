@@ -21,13 +21,25 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
-        <activity android:name="com.example.quanlyvemaybay.activity.HomeActivity" >
+        <activity
+            android:name="com.example.quanlyvemaybay.NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- <activity android:name=".activity.HomeActivity"> -->
+
+
+        <!-- </activity> -->
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.quanlyvemaybay.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

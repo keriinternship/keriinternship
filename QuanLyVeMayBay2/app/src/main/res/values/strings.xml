@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Vé máy bay</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AIRTICKET KERI</string>
+    <string name="nav_header_subtitle">Dịch vụ đặt vé máy bay trực tuyến</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="find_plane_label">TÌM CHUYẾN BAY</string>
+    <string name="khuhoi">KHỨ HỒI</string>
+    <string name="motchieu">MỘT CHIỀU</string>
+    <string name="swap">Đổi điểm đi điểm đến</string>
+    <string name="lblDiemDi">Điểm Đi</string>
+    <string name="lblDiemDen">Điểm Đến</string>
+    <string name="lblNgayDi">Ngày đi</string>
+    <string name="chooseNgayDi">Chọn ngày đi</string>
+    <string name="lblNgayDen">Ngày Đén</string>
+    <string name="lblHK">Hành Khách</string>
+    <string name="lblNguoiLon">Người lớn</string>
+    <string name="lblTreEm">Trẻ em</string>
+    <string name="defaultNguoiLon">1</string>
+    <string name="defaultTreEm">0</string>
+    <string name="btnFindPlanes">Tìm vé máy bay</string>
+    <string name="lblFind">Tìm vé máy bay</string>
+</resources>

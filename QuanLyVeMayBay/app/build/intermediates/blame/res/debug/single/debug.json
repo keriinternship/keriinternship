@@ -8,28 +8,12 @@
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\vn_airlines.png"
     },
     {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_lload.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\lload.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_navigation.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\activity_navigation.xml"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_air_ticket_layout.xml.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\air_ticket_layout.xml"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jetstar.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\jetstar.png"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -40,52 +24,20 @@
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\backgroud.png"
     },
     {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gallery.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_search.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\search.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_jetstar.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\jetstar.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_vn_airlines.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\vn_airlines.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lload.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\lload.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_search.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-hdpi\\search.png"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_out.xml.flat",
@@ -100,10 +52,6 @@
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\vt_air.png"
     },
     {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_search.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-mdpi\\search.png"
-    },
-    {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\logo.png"
     },
@@ -112,28 +60,16 @@
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\menu_navigation.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\menu\\navigation.xml"
+    },
+    {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo.png"
     },
     {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_search.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\search.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_search.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxxhdpi\\search.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.png.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\search.png"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_nok_air.png.flat",
@@ -144,16 +80,144 @@
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\backgroud.png"
     },
     {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_in.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\anim_bg_anim.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\anim\\bg_anim.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_lload.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\lload.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_air_ticket_layout.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\air_ticket_layout.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jetstar.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\jetstar.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_search.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\search.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slideshow.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_jetstar.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\jetstar.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_vn_airlines.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\vn_airlines.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lload.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\lload.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_search.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-hdpi\\search.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_planes_layout.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\search_planes_layout.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_search.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-mdpi\\search.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_search.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xhdpi\\search.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_search.png.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-xxxhdpi\\search.png"
+    },
+    {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_in.xml.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vt_air.png.flat",
@@ -168,15 +232,11 @@
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\anim_bg_anim.xml.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\anim\\bg_anim.xml"
+        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
         "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nok_air.png.flat",
         "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable\\nok_air.png"
-    },
-    {
-        "merged": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\ThucTap\\keriinternship\\QuanLyVeMayBay\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     }
 ]
