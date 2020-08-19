@@ -4,8 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/margin_find_plane">
-
+    android:background="@color/colorBlueMo">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_find_plane"
+        android:orientation="vertical">
     <LinearLayout
         android:id="@+id/lnDenDi"
         android:layout_width="match_parent"
@@ -13,17 +17,20 @@
         android:layout_below="@id/btngGroup"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:baselineAligned="false"
+        android:background="@color/colorWhite"
         android:orientation="horizontal">
         <!-- Điểm đi -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
+            android:layout_margin="@dimen/margin_find_plane"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 tools:ignore="UseCompoundDrawables">
 
 
@@ -73,19 +80,21 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/imgvSwap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="@color/colorWhite"
                 android:contentDescription="@string/swap"
-                app:srcCompat="@drawable/ic_baseline_swap_horizontal_circle_24"/>
+                app:srcCompat="@drawable/ic_baseline_swap_horizontal_circle_24" />
         </LinearLayout>
         <!-- Điểm đến -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
+            android:layout_margin="@dimen/margin_find_plane"
             android:orientation="vertical">
 
             <LinearLayout
@@ -138,6 +147,7 @@
 
     <LinearLayout
         android:id="@+id/lnNgayDiVe"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lnDenDi"
@@ -149,10 +159,12 @@
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/margin_end"
             android:layout_weight="1"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/lblNgayDi"
+                android:layout_margin="@dimen/margin_find_plane"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lblNgayDi" />
@@ -189,10 +201,12 @@
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/margin_end"
             android:layout_weight="1"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/lblNgayDen"
+                android:layout_margin="@dimen/margin_find_plane"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lblNgayDen" />
@@ -230,6 +244,8 @@
         android:id="@+id/lnHanhKhach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:background="@color/colorWhite"
         android:layout_below="@id/lnNgayDiVe"
         android:layout_marginTop="@dimen/margin_bottom"
         android:orientation="vertical">
@@ -237,6 +253,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_find_plane"
             tools:ignore="UselessParent">
 
             <TextView
@@ -256,6 +273,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/margin_end"
                 android:layout_weight="1"
+                android:layout_margin="@dimen/margin_find_plane"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
@@ -276,6 +294,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/margin_end"
                 android:layout_weight="1"
+                android:layout_margin="@dimen/margin_find_plane"
                 android:orientation="vertical">
 
                 <TextView
@@ -333,6 +352,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/khuhoi"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:textSize="16sp" />
 
         <com.google.android.material.button.MaterialButton
@@ -340,6 +360,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/motchieu" />
+            android:text="@string/motchieu"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
     </com.google.android.material.button.MaterialButtonToggleGroup>
+    </RelativeLayout>
 </RelativeLayout>
