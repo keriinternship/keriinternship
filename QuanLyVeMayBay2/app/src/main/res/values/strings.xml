@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Trang Chủ</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="find_plane_label">TÌM CHUYẾN BAY</string>
@@ -26,4 +26,18 @@
     <string name="defaultTreEm">0</string>
     <string name="btnFindPlanes">Tìm vé máy bay</string>
     <string name="lblFind">Tìm vé máy bay</string>
+    <string name="lblfindcode">Tra Cứu Mã Giữ Chỗ</string>
+    <string name="lblThongTin">Trợ Giúp</string>
+    <string name="lblMadatcho">Mã số đặt chỗ *</string>
+    <string name="lblSurname">Họ (ví dụ: Nguyễn) *</string>
+    <string name="lblLastName">Tên đệm và Tên (ví dụ: Văn A) *</string>
+    <string name="lblTracuu">Tra cứu</string>
+    <string name="lblLienhechungtoi">Liên Hệ Chúng Tôi</string>
+    <string name="lblDiaChi">Địa chỉ: Tòa nhà SBI, CVPM Quang Trung, P. Tân Chánh Hiệp, Quận 12, Tp.HCM, Việt Nam.</string>
+    <string name="lblBuy">Mua vé. (Lưu ý: Sau 18h đóng cửa)</string>
+    <string name="lblWeb">Web: https://keri.vn</string>
+    <string name="lblEmail">Email: sale@keri.vn</string>
+    <string name="lblHotline">Hotline: 028 3715 0068 (8h30-18h00) </string>
+    <string name="lblTacGia"> Tác Giả</string>
+    <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
 </resources>
