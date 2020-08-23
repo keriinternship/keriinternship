@@ -73,8 +73,8 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <ImageView
-                android:id="@+id/imgvSwap"
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtnSwap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -333,13 +333,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/khuhoi"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMotChieu"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/motchieu" />
+            android:text="@string/motchieu"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
     </com.google.android.material.button.MaterialButtonToggleGroup>
 </RelativeLayout>

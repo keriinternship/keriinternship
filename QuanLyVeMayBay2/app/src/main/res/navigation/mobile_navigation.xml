@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.quanlyvemaybay2.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.quanlyvemaybay2.ui.findplane.FindPlaneFragment"
+        android:label="@string/lblFind"
+        tools:layout="@layout/fragment_find_plane_layout" />
 
     <fragment
         android:id="@+id/nav_gallery"
