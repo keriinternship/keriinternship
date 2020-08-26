@@ -81,7 +81,9 @@
             android:gravity="center">
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/imgvSwap"
+
+                android:id="@+id/ibtnSwap"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -353,6 +355,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/khuhoi"
+
+            android:textSize="16sp"
+
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:textSize="16sp" />
 
