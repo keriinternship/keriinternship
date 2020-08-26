@@ -5,6 +5,9 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_marginRight">10dp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="textSize">20sp</dimen>
     <dimen name="margin_bottom_title_navigation">8dp</dimen>
     <dimen name="text_lable_navigation">18sp</dimen>
     <dimen name="margin_find_plane">8dp</dimen>
