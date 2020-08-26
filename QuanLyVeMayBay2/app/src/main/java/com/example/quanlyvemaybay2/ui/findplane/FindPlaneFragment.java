@@ -13,14 +13,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.quanlyvemaybay2.R;
+import com.google.android.material.button.MaterialButton;
 
 public class FindPlaneFragment extends Fragment {
     private ImageButton ibtnSwap;
+    MaterialButton btnFindPlanes;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_find_plane_layout, container, false);
         ibtnSwap = root.findViewById(R.id.ibtnSwap);
+        btnFindPlanes = root.findViewById(R.id.btnFindPlanes);
         ibtnSwap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,6 +31,13 @@ public class FindPlaneFragment extends Fragment {
                 ibtnSwap.startAnimation(myAnim);
             }
         });
+        btnFindPlanes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         return root;
     }
+
 }

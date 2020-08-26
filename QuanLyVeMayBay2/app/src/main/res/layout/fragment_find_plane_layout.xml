@@ -355,9 +355,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/khuhoi"
-
-            android:textSize="16sp"
-
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:textSize="16sp" />
 
