@@ -52,11 +52,12 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
                 android:textSize="30sp"></EditText>
-          <Button
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="@string/lblTracuu"
-              android:background="@drawable/mybutton"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:text="@string/lblTracuu"></Button>
         </LinearLayout>
 
 </LinearLayout>
