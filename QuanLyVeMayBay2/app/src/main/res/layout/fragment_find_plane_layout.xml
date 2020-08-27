@@ -51,26 +51,19 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
-                <TextView
+                <Button
                     android:id="@+id/txtMaDiemDi"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:textColor="@color/colorBlack"
+                    android:backgroundTint="@color/colorWhite"
                     android:text="_ _ _"
                     android:textSize="16sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/txtTenDiemDi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""/>
-            </LinearLayout>
         </LinearLayout>
         <!-- Swap -->
         <LinearLayout
@@ -101,7 +94,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="right"
                 tools:ignore="RtlHardcoded,UseCompoundDrawables">
 
@@ -122,27 +116,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <Button
                     android:id="@+id/txtMaDiemDen"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
                     android:gravity="end"
                     android:text="_ _ _"
+                    android:textColor="@color/colorBlack"
                     android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/txtTenDiemDen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:text="_ _ _"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -335,7 +319,9 @@
         android:layout_marginEnd="@dimen/margin_find_plane"
         android:layout_marginBottom="@dimen/margin_find_plane"
         android:text="@string/find_plane_label"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/btngGroup"
@@ -355,8 +341,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/khuhoi"
+
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:textSize="16sp" />
+
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMotChieu"
@@ -366,6 +355,7 @@
             android:layout_weight="1"
             android:text="@string/motchieu"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
     </com.google.android.material.button.MaterialButtonToggleGroup>
     </RelativeLayout>
 </RelativeLayout>
