@@ -1,26 +1,27 @@
 package com.example.quanlyvemaybay2.ui.findplane;
 
-        import android.content.res.ColorStateList;
-        import android.os.Bundle;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.view.animation.Animation;
-        import android.view.animation.AnimationUtils;
-        import android.widget.ImageButton;
+import android.content.res.ColorStateList;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 
-        import androidx.annotation.NonNull;
-        import androidx.annotation.Nullable;
-        import androidx.fragment.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
-        import com.example.quanlyvemaybay2.R;
-        import com.google.android.material.button.MaterialButton;
-        import com.google.android.material.button.MaterialButtonToggleGroup;
+import com.example.quanlyvemaybay2.R;
+import com.example.quanlyvemaybay2.dialogs.DialogCityCode;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.button.MaterialButtonToggleGroup;
 
 
 public class FindPlaneFragment extends Fragment {
     private ImageButton ibtnSwap;
-    private MaterialButton btnKhuHoi, btnMotChieu;
+    private MaterialButton btnKhuHoi, btnMotChieu, btnMaDiemDi, btnMaDiemDen;
     private MaterialButtonToggleGroup btnTogGroup;
     MaterialButton btnFindPlanes;
 
@@ -29,18 +30,16 @@ public class FindPlaneFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_find_plane_layout, container, false);
-        ibtnSwap = root.findViewById(R.id.ibtnSwap);
-
-        btnFindPlanes = root.findViewById(R.id.btnFindPlanes);
-
-
         // Get views từ layouts
+        ibtnSwap = root.findViewById(R.id.ibtnSwap);
+        btnFindPlanes = root.findViewById(R.id.btnFindPlanes);
         btnKhuHoi = root.findViewById(R.id.btnKhuHoi);
         btnMotChieu = root.findViewById(R.id.btnMotChieu);
         btnTogGroup = root.findViewById(R.id.btngGroup);
+        btnMaDiemDi = root.findViewById(R.id.btnMaDiemDi);
+        btnMaDiemDen = root.findViewById(R.id.btnMaDiemDen);
 
         // Set animation cho imageView swap điểm đi và điểm đến
-
         ibtnSwap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +52,13 @@ public class FindPlaneFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
+            }
+        });
+
+        btnMaDiemDi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialogToChooseCityCode();
             }
         });
 
@@ -94,5 +100,10 @@ public class FindPlaneFragment extends Fragment {
         });
 
         return root;
+    }
+
+    private void openDialogToChooseCityCode() {
+        DialogCityCode dialogCityCode = new DialogCityCode();
+        dialogCityCode.show(getActivity().getSupportFragmentManager(), "Choose city code");
     }
 }

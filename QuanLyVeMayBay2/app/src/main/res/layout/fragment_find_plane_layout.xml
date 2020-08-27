@@ -28,10 +28,10 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="232dp"
-                android:layout_height="wrap_content"
-
-                tools:ignore="UseCompoundDrawables">
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left">
 
 
                 <TextView
@@ -51,16 +51,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="0dp"
+                android:layout_weight="2">
 
                 <Button
-                    android:id="@+id/txtMaDiemDi"
+                    android:id="@+id/btnMaDiemDi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="end"
+                    android:gravity="start"
                     android:textColor="@color/colorBlack"
                     android:backgroundTint="@color/colorWhite"
-                    android:text="_ _ _"
+                    android:text="Điểm đi"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -119,12 +120,12 @@
                 android:layout_height="0dp"
                 android:layout_weight="2">
                 <Button
-                    android:id="@+id/txtMaDiemDen"
+                    android:id="@+id/btnMaDiemDen"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:backgroundTint="@color/colorWhite"
                     android:gravity="end"
-                    android:text="_ _ _"
+                    android:text="Điểm đến"
                     android:textColor="@color/colorBlack"
                     android:textSize="16sp" />
             </LinearLayout>
