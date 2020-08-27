@@ -13,7 +13,7 @@
     <dimen name="text_lable_navigation">18sp</dimen>
     <dimen name="margin_find_plane">8dp</dimen>
     <dimen name="marginLeft">10dp</dimen>
-    <dimen name="margin_bottom">20dp</dimen>
+    <dimen name="margin_bottom">30dp</dimen>
     <dimen name="margin_end">5dp</dimen>
     <dimen name="pading_left">10dp</dimen>
 </resources>
