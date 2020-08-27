@@ -1,33 +1,28 @@
 package com.example.quanlyvemaybay2.ui.findplane;
 
-import android.content.res.ColorStateList;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
+        import android.content.res.ColorStateList;
+        import android.os.Bundle;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.view.animation.Animation;
+        import android.view.animation.AnimationUtils;
+        import android.widget.ImageButton;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+        import androidx.annotation.NonNull;
+        import androidx.annotation.Nullable;
+        import androidx.fragment.app.Fragment;
 
-import com.example.quanlyvemaybay2.R;
-import com.google.android.material.button.MaterialButton;
-
-
-public class FindPlaneFragment extends Fragment {
-    private ImageButton ibtnSwap;
-    MaterialButton btnFindPlanes;
-	
-import com.google.android.material.button.MaterialButtonToggleGroup;
+        import com.example.quanlyvemaybay2.R;
+        import com.google.android.material.button.MaterialButton;
+        import com.google.android.material.button.MaterialButtonToggleGroup;
 
 
 public class FindPlaneFragment extends Fragment {
     private ImageButton ibtnSwap;
     private MaterialButton btnKhuHoi, btnMotChieu;
     private MaterialButtonToggleGroup btnTogGroup;
+    MaterialButton btnFindPlanes;
 
 
     @Nullable
@@ -100,5 +95,4 @@ public class FindPlaneFragment extends Fragment {
 
         return root;
     }
-
 }
