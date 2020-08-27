@@ -12,5 +12,5 @@ public interface APICitycode {
     // GET students from server
     // Server return json array
     @GET("/QL_Planes/api_citycode.php")
-    Call<List<city_code>> getApi_air();
+    Call<List<city_code>> getApi_citycode();
 }

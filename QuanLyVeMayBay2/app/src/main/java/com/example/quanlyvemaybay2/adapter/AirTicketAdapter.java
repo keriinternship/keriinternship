@@ -15,27 +15,27 @@ import com.example.quanlyvemaybay2.data_model.air_ticket;
 
 import java.util.ArrayList;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecylerViewHolder> {
+public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirTicketViewHolder> {
     private Context context;
     private ArrayList<air_ticket> ticketList;
 
-    public RecyclerAdapter(Context context, ArrayList<air_ticket> ticketList) {
+    public AirTicketAdapter(Context context, ArrayList<air_ticket> ticketList) {
         this.context = context;
         this.ticketList = ticketList;
     }
 
     @NonNull
     @Override
-    public RecylerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AirTicketViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view  = inflater.inflate(R.layout.item_airticket_layout, parent, false);
 
-        return new RecylerViewHolder(view);
+        return new AirTicketViewHolder(view);
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecylerViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AirTicketViewHolder holder, int position) {
         air_ticket air_ticket = ticketList.get(position);
 
         holder.tv_maVe.setText(air_ticket.getPlanes_id());
@@ -64,10 +64,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recyle
         return ticketList.size();
     }
 
-    public class RecylerViewHolder extends RecyclerView.ViewHolder {
+    public class AirTicketViewHolder extends RecyclerView.ViewHolder {
         TextView tv_maVe,  tv_giaTien ,tv_maDi , tv_gioXP,tv_maDen, tv_gioDen;
         Button btnChon, btnXemchitiet;
-        public RecylerViewHolder(@NonNull View itemView) {
+        public AirTicketViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_maVe = itemView.findViewById(R.id.tv_maVe);
             tv_giaTien = itemView.findViewById(R.id.tv_giaTien);

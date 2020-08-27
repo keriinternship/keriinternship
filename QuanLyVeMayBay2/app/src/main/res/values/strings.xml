@@ -51,11 +51,14 @@
     <string name="ma160"> 160 </string>
     <string name="gioXuatphat"> 15:50 </string>
     <string name="gioDen">14:00</string>
-    <string name="chon">Chọn</string>
     <string name="money"> 299.000 đ </string>
     <string name="btnChiTiet"> Xem chi tiết </string>
     <string name="tv_So1"> 1</string>
     <string name="tv_So0"> 0</string>
 
     <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
+
+    <!-- Dialog -->
+    <string name="chon">CHỌN</string>
+    <string name="huy">HỦY</string>
 </resources>
