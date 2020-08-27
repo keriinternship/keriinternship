@@ -58,9 +58,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="end"
-                    android:textColor="@color/colorBlack"
+
                     android:backgroundTint="@color/colorWhite"
-                    android:text="_ _ _"
+                    android:text="___"
+
                     android:textSize="16sp" />
             </LinearLayout>
 
