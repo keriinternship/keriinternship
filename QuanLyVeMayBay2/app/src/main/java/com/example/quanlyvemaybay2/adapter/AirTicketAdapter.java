@@ -11,15 +11,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
-import com.example.quanlyvemaybay2.data_model.air_ticket;
+import com.example.quanlyvemaybay2.data_model.AirTicket;
+import com.example.quanlyvemaybay2.interfaces.CityCodeInterface;
 
 import java.util.ArrayList;
 
 public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirTicketViewHolder> {
     private Context context;
-    private ArrayList<air_ticket> ticketList;
+    private ArrayList<AirTicket> ticketList;
 
-    public AirTicketAdapter(Context context, ArrayList<air_ticket> ticketList) {
+
+    public AirTicketAdapter(Context context, ArrayList<AirTicket> ticketList) {
         this.context = context;
         this.ticketList = ticketList;
     }
@@ -36,14 +38,14 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
 
     @Override
     public void onBindViewHolder(@NonNull AirTicketViewHolder holder, int position) {
-        air_ticket air_ticket = ticketList.get(position);
+        AirTicket AirTicket = ticketList.get(position);
 
-        holder.tv_maVe.setText(air_ticket.getPlanes_id());
-        holder.tv_giaTien.setText(air_ticket.getGiatien());
-        holder.tv_maDi.setText(air_ticket.getDiemdi());
-        holder.tv_gioXP.setText(air_ticket.getGioxp());
-        holder.tv_maDen.setText(air_ticket.getDiemden());
-        holder.tv_gioDen.setText(air_ticket.getGioden());
+        holder.tv_maVe.setText(AirTicket.getPlanes_id());
+        holder.tv_giaTien.setText(AirTicket.getGiatien());
+        holder.tv_maDi.setText(AirTicket.getDiemdi());
+        holder.tv_gioXP.setText(AirTicket.getGioxp());
+        holder.tv_maDen.setText(AirTicket.getDiemden());
+        holder.tv_gioDen.setText(AirTicket.getGioden());
 
         holder.btnChon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,13 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
         holder.btnXemchitiet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+            }
+        });
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
         });

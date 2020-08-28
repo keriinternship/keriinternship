@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlueMo"
+    android:background="@color/colorGraymo"
     android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -12,6 +12,7 @@
             android:orientation="vertical">
             <TextView
                 android:id="@+id/tv_masodatcho"
+                android:textColor="@color/colorOrange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lblMadatcho"
@@ -23,40 +24,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:layout_marginBottom="5sp"
-                android:textSize="30sp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
                ></EditText>
             <TextView
+                android:textColor="@color/colorOrange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lblSurname"
                 android:layout_marginBottom="5sp"
+
                 android:textSize="20sp">
             </TextView>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:layout_marginBottom="5sp"
-                android:textSize="30sp"></EditText>
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"></EditText>
             <TextView
+                android:textColor="@color/colorOrange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lblLastName"
-                android:layout_marginBottom="5sp"
+
                 android:textSize="20sp">
             </TextView>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_marginBottom="5sp"
                 android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:textSize="30sp"></EditText>
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"></EditText>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/mybutton"
+
                 android:text="@string/lblTracuu"></Button>
         </LinearLayout>
 

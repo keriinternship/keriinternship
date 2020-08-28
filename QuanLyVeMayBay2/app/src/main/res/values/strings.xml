@@ -55,10 +55,12 @@
     <string name="btnChiTiet"> Xem chi tiết </string>
     <string name="tv_So1"> 1</string>
     <string name="tv_So0"> 0</string>
-
+    <string name="tv_chondemden">Chọn điểm đến</string>
     <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
 
     <!-- Dialog -->
     <string name="chon">CHỌN</string>
     <string name="huy">HỦY</string>
+
+    <string name="result_findplanes">Kết quả tìm kiếm</string>
 </resources>

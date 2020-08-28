@@ -2,12 +2,14 @@ package com.example.quanlyvemaybay2.dialogs;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,8 +19,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
 import com.example.quanlyvemaybay2.adapter.CityCodeAdapter;
-import com.example.quanlyvemaybay2.data_model.city_code;
-import com.example.quanlyvemaybay2.interFace.APICitycode;
+import com.example.quanlyvemaybay2.data_model.CityCode;
+import com.example.quanlyvemaybay2.divider.DividerItemDecoration;
+import com.example.quanlyvemaybay2.interfaces.APICitycode;
+import com.example.quanlyvemaybay2.interfaces.CityCodeInterface;
 import com.example.quanlyvemaybay2.utils.ApiCityCodeUtils;
 
 import java.util.ArrayList;
@@ -28,42 +32,65 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class DialogCityCode extends DialogFragment {
+public class DialogCityCode extends DialogFragment implements CityCodeInterface{
+    CityCode cityCode;
     APICitycode mApiCitycode;
+    RecyclerView rvCityCode;
+    CityCodeAdapter adapter;
+    ArrayList<CityCode> cityCodes = new ArrayList<CityCode>();
+    Button button;
+    View view;
+
+    public DialogCityCode newInstance(Button button) {
+        
+        DialogCityCode fragment = new DialogCityCode();
+        fragment.button = button;
+        return fragment;
+
+    }
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         // Create dialog for choose code
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
         // Get layout inflater
-        LayoutInflater inflater = LayoutInflater.from(getContext());
+        LayoutInflater inflater = getActivity().getLayoutInflater();
         // Set view for a view
-        final View view = inflater.inflate(R.layout.dialog_city_code, null);
-
+        view = inflater.inflate(R.layout.dialog_city_code, null);
         //
-        final RecyclerView rvCityCode = view.findViewById(R.id.rvCityCode);
+        rvCityCode = view.findViewById(R.id.rvCityCode);
         //
         mApiCitycode = ApiCityCodeUtils.getApiCitycode();
-        mApiCitycode.getApi_citycode().enqueue(new Callback<List<city_code>>() {
+        mApiCitycode.getApi_citycode().enqueue(new Callback<List<CityCode>>() {
             @Override
-            public void onResponse(Call<List<city_code>> call, Response<List<city_code>> response) {
-                ArrayList<city_code> cityCodes = new ArrayList<city_code>();
-                // Get city_code item of response to add in cityCodes
-                for (int i = 0; i < response.body().size(); i++) {
-                    cityCodes.add(response.body().get(i));
+            public void onResponse(Call<List<CityCode>> call, Response<List<CityCode>> response) {
+                try {
+                    for (int i = 0; i < response.body().size(); i++) {
+                        cityCodes.add(response.body().get(i));
+                    }
+                    // Create adapter
+                    adapter = new CityCodeAdapter(getContext(), cityCodes);
+                    // Set adapter to rvCityCode
+                    rvCityCode.setAdapter(adapter);
+                } catch (Exception e) {
+                    Log.d("onResponse", "Error");
+                    e.printStackTrace();
                 }
-                // Create adapter
-                CityCodeAdapter adapter = new CityCodeAdapter(getContext(), cityCodes);
-                // Set adapter to rvCityCode
-                rvCityCode.setAdapter(adapter);
             }
 
             @Override
-            public void onFailure(Call<List<city_code>> call, Throwable t) {
-
+            public void onFailure(Call<List<CityCode>> call, Throwable t) {
+                Log.d("onFailure", t.toString());
             }
         });
-
+//        cityCodes.add(new city_code(1,"AAA", "AAA"));
+//        cityCodes.add(new city_code(1,"AAA", "AAA"));
+//        cityCodes.add(new city_code(1,"AAA", "AAA"));
+//        cityCodes.add(new city_code(1,"AAA", "AAA"));
+//
+//        adapter = new CityCodeAdapter(getContext(), cityCodes);
+//        rvCityCode.setAdapter(adapter);
+        rvCityCode.addItemDecoration(new DividerItemDecoration(getResources().getDrawable(R.drawable.divider, getActivity().getTheme())));
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         rvCityCode.setLayoutManager(layoutManager);
 
@@ -81,7 +108,7 @@ public class DialogCityCode extends DialogFragment {
         alertDialog.setPositiveButton(R.string.chon, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                button.setText(CityCodeAdapter.cityCode_static.getCode());
             }
         });
 
@@ -89,4 +116,8 @@ public class DialogCityCode extends DialogFragment {
     }
 
 
+    @Override
+    public void OnClickToGetCityCodeListener(CityCode cityCode) {
+        this.cityCode = cityCode;
+    }
 }

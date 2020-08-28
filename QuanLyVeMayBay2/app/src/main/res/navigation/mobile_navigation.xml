@@ -3,13 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_findplane">
 
+<!--    <fragment-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:name="com.example.quanlyvemaybay2.ui.findplane.FindPlaneFragment"-->
+<!--        android:label="@string/lblFind"-->
+<!--        tools:layout="@layout/fragment_find_plane_layout" />-->
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_findplane"
         android:name="com.example.quanlyvemaybay2.ui.findplane.FindPlaneFragment"
         android:label="@string/lblFind"
-        tools:layout="@layout/fragment_find_plane_layout" />
+        tools:layout="@layout/fragment_find_plane_layout" >
+        <action
+            android:id="@+id/action_nav_findplane_to_nav_result_findplanes"
+            app:destination="@id/nav_result_findplanes" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -23,11 +32,6 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
-    <fragment
-        android:id="@+id/nav_findplane"
-        android:name="com.example.quanlyvemaybay2.ui.findplane.FindPlaneFragment"
-        android:label="@string/lblFind"
-        tools:layout="@layout/fragment_find_plane_layout" />
 
     <fragment
         android:id="@+id/nav_findreservationcode"
@@ -40,5 +44,11 @@
         android:name="com.example.quanlyvemaybay2.ui.information.Infor"
         android:label="@string/lblThongTin"
         tools:layout="@layout/fragment_information_layout">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_result_findplanes"
+        android:name="com.example.quanlyvemaybay2.ui.findplanresult.FindPlanResultFragment"
+        android:label="@string/result_findplanes"
+        tools:layout="@layout/find_airticket_layout">
     </fragment>
 </navigation>
