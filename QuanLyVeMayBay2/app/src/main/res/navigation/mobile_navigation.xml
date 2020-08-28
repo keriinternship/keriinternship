@@ -41,4 +41,10 @@
         android:label="@string/lblThongTin"
         tools:layout="@layout/fragment_information_layout">
     </fragment>
+    <fragment
+        android:id="@+id/nav_information_flight"
+        android:name="com.example.quanlyvemaybay2.ui.inforFly.InFlyFragment"
+        android:label="@string/lblThongtinchuyenbay"
+        tools:layout="@layout/information_flight_layout">
+    </fragment>
 </navigation>

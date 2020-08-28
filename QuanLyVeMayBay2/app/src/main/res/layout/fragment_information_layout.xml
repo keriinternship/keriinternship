@@ -1,244 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlueMo"
+    android:layout_margin="5dp"
+    android:background="@color/colorGraymo"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:textSize="@dimen/textSize"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorGraymo"
+            android:background="@color/colorOrange"
+            android:text="@string/lblLienhechungtoi"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_weight="4">
+        <TextView
+            android:text="@string/lblBuy"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/tv_textSize"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/lblLienhechungtoi"
-            android:textSize="25sp"></TextView>
-    </LinearLayout>
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:gravity="left|center"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:text="@string/lblDiaChi"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/textSize" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_language_24"
+            android:text="@string/lblWeb"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/textSize"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:gravity="center"
+            android:text="@string/lblEmail"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:gravity="center"
+            android:text="@string/lblHotline"
+            android:textColor="@color/colorOrange"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textSize="18sp" />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorOrange"
-                android:gravity="center"
-                android:text="@string/lblBuy"
-                android:textSize="25sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
-            android:orientation="horizontal">
-
-            <ImageView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_home_24" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_find_plane"
-                android:text="@string/lblDiaChi"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_language_24" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_find_plane"
-                android:text="@string/lblWeb"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_email_24" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_find_plane"
-                android:text="@string/lblEmail"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_phone_24" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_find_plane"
-                android:text="@string/lblHotline"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/textSize"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/lblTacGia"
-                android:textSize="25sp"></TextView>
-        </LinearLayout>
-
-        <LinearLayout
+            android:gravity="center"
+            android:textColor="@color/colorGraymo"
+            android:background="@color/colorOrange"
+            android:text="@string/lblTacGia"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <TextView
+            android:text="@string/lblQuestion"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textColor="@color/colorOrange"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
 
-            <LinearLayout
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_language_24"
+            android:text="@string/lblWeb"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/textSize"/>
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:gravity="center"
+            android:text="@string/lblEmail"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/textSize" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorOrange"
-                    android:gravity="center"
-                    android:text="@string/lblQuestion"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <ImageView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_baseline_home_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_find_plane"
-                    android:text="@string/lblDiaChi"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_baseline_language_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_find_plane"
-                    android:text="@string/lblWeb"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_baseline_email_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_find_plane"
-                    android:text="@string/lblEmail"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_baseline_phone_24" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_find_plane"
-                    android:text="@string/lblHotline"
-                    android:textSize="20sp" />
-            </LinearLayout>
-        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:gravity="center"
+            android:text="@string/lblHotline"
+            android:textColor="@color/colorOrange"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:textSize="18sp" />
     </LinearLayout>
 
 </LinearLayout>

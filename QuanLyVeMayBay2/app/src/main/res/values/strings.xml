@@ -6,7 +6,6 @@
     <string name="nav_header_subtitle">Dịch vụ đặt vé máy bay trực tuyến</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Trang Chủ</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -18,7 +17,7 @@
     <string name="lblDiemDen">Điểm Đến</string>
     <string name="lblNgayDi">Ngày đi</string>
     <string name="chooseNgayDi">Chọn ngày đi</string>
-    <string name="lblNgayDen">Ngày Đén</string>
+    <string name="lblNgayDen">Ngày Đến</string>
     <string name="lblHK">Hành Khách</string>
     <string name="lblNguoiLon">Người lớn</string>
     <string name="lblTreEm">Trẻ em</string>
@@ -32,6 +31,7 @@
     <string name="lblSurname">Họ (ví dụ: Nguyễn) *</string>
     <string name="lblLastName">Tên đệm và Tên (ví dụ: Văn A) *</string>
     <string name="lblTracuu">Tra cứu</string>
+    <!-- String for fragment_information_layout -->
     <string name="lblLienhechungtoi">Liên Hệ Chúng Tôi</string>
     <string name="lblDiaChi">Địa chỉ: Tòa nhà SBI, CVPM Quang Trung, P. Tân Chánh Hiệp, Quận 12, Tp.HCM, Việt Nam.</string>
     <string name="lblBuy">Mua vé. (Lưu ý: Sau 18h đóng cửa)</string>
@@ -39,6 +39,31 @@
     <string name="lblEmail">Email: sale@keri.vn</string>
     <string name="lblHotline">Hotline: 028 3715 0068 (8h30-18h00) </string>
     <string name="lblTacGia"> Tác Giả</string>
+    <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
+    <!-- End -->
+    <!-- String for information_flight_layout -->
+    <string name="tv_money">$2,775,000</string>
+    <string name="tv_chonchuyenkhac">Chọn chuyến khác</string>
+    <string name="lblThongtinchuyenbay">Thông tin chuyến bay</string>
+    <string name="lblChieudi">Chiều đi</string>
+    <string name="lblChieuve">Chiều về</string>
+    <string name="lblDate">Saturday, 24 June 2017</string>
+    <string name="tv_Noichon">Hà Nội</string>
+    <string name="tv_Noichon1">Hồ Chí Minh</string>
+    <string name="tv_time"> 12:00 </string>
+    <string name="tv_Date"> 24 Jun </string>
+    <string name="tv_Diemxp"> Hà Nội (HN) </string>
+    <string name="tv_Diemkt"> Hồ Chí Minh (HCM) </string>
+    <string name="tv_Mave"> BL-211-357 </string>
+    <string name="tv_Thongtingiave"> Thông tin giá vé </string>
+    <string name="tv_Giave"> Giá Vé</string>
+    <string name="tv_Thue"> Thuế và phí </string>
+    <string name="tv_Tong"> Tổng cộng</string>
+    <string name="tv_MoneyGiave">$4,185,000</string>
+    <string name="tv_MoneyThue">$1,120,500</string>
+    <string name="tv_MoneyTong">$5,305,500</string>
+    <string name="tv_Luuy">(* Giá vé đã bao gồm thuế và phụ phí)</string>
+    <!--End-->
     <string name="date">24 tháng 8 2020</string>
     <string name="nguoilon">người lớn</string>
     <string name="treem">trẻ em</string>
@@ -56,7 +81,7 @@
     <string name="tv_So1"> 1</string>
     <string name="tv_So0"> 0</string>
     <string name="tv_chondemden">Chọn điểm đến</string>
-    <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
+    <string name="btnTieptuc">Tiếp tục </string>
 
     <!-- Dialog -->
     <string name="chon">CHỌN</string>
