@@ -46,9 +46,17 @@
         tools:layout="@layout/fragment_information_layout">
     </fragment>
     <fragment
+
         android:id="@+id/nav_result_findplanes"
         android:name="com.example.quanlyvemaybay2.ui.findplanresult.FindPlanResultFragment"
         android:label="@string/result_findplanes"
         tools:layout="@layout/find_airticket_layout">
+    </fragment>
+	
+	<fragment
+        android:id="@+id/nav_information_flight"
+        android:name="com.example.quanlyvemaybay2.ui.inforFly.InFlyFragment"
+        android:label="@string/lblThongtinchuyenbay"
+        tools:layout="@layout/information_flight_layout">
     </fragment>
 </navigation>

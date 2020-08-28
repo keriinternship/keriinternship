@@ -64,7 +64,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:backgroundTint="@color/colorGraymo"
+
                         android:gravity="start"
+
                         android:text="@string/lblDiemDi"
                         android:textColor="@color/colorOrange"
                         android:textSize="16sp" />
@@ -87,6 +89,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
                     android:background="@color/colorWhite"
                     android:backgroundTint="@color/colorOrange"
                     android:contentDescription="@string/swap"
@@ -101,6 +105,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -127,6 +132,34 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorOrange"
+                    android:gravity="right"
+                    tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/imgvDiemDen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/marginLeft"
+                        android:contentDescription="@string/lblDiemDen"
+                        app:srcCompat="@drawable/ic_baseline_flight_land_24" />
+
+                    <TextView
+                        android:id="@+id/lblDiemDen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblDiemDen"
+                        android:textColor="@color/colorGraymo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
                     android:layout_weight="4">
 
                     <Button
@@ -154,9 +187,13 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
+
             android:layout_marginEnd="@dimen/margin_end"
+
+
             android:backgroundTint="@color/colorOrange"
             android:layout_weight="1"
+
             android:background="@color/colorWhite"
             android:orientation="vertical">
 
@@ -173,7 +210,12 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorGraymo"
                 android:layout_marginStart="5dp"
+
                 android:layout_marginEnd="5dp"
+
+                android:layout_marginBottom="5dp"
+
+
                 android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
@@ -188,10 +230,20 @@
 
                 <Button
                     android:id="@+id/edtNgayDi"
+
                     android:backgroundTint="@color/colorGraymo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorOrange"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="dd/mm/yyyy"
+                    android:hint="dd/mm/yyyy"
+
+                    android:textColor="@color/colorOrange"
+                    android:inputType="date"
+
                     android:labelFor="@id/edtNgayDi" />
 
             </LinearLayout>
@@ -236,9 +288,13 @@
                     android:id="@+id/edtNgayDen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+
                     android:backgroundTint="@color/colorGraymo"
                     android:labelFor="@id/edtNgayDen"
-                    android:textColor="@color/colorOrange" />
+                    android:textColor="@color/colorOrange" 
+
+                    android:inputType="date"
+                    android:labelFor="@id/edtNgayDen" />
 
             </LinearLayout>
 
