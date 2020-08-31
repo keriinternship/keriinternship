@@ -57,7 +57,7 @@
     <string name="tv_Mave"> BL-211-357 </string>
     <string name="tv_Thongtingiave"> Thông tin giá vé </string>
     <string name="tv_Giave"> Giá Vé</string>
-    <string name="tv_Thue"> Thuế và phí </string>
+    <string name="tv_Thue"> Thuế &#38; phí </string>
     <string name="tv_Tong"> Tổng cộng</string>
     <string name="tv_MoneyGiave">$4,185,000</string>
     <string name="tv_MoneyThue">$1,120,500</string>
