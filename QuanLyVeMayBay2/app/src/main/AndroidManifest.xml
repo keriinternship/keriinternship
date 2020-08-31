@@ -8,9 +8,6 @@
         android:allowBackup="true"
         android:label="@string/app_name"
 
-        android:icon="@mipmap/logo_mobile"
-        android:roundIcon="@mipmap/logo_mobile_round"
-
         android:icon="@mipmap/logo"
         android:roundIcon="@mipmap/logo"
 

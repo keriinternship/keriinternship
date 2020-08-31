@@ -23,4 +23,6 @@
 
    <dimen name="layout_marginBottom">10dp</dimen>
 
+    <dimen name="textSize_Button">16sp</dimen>
+
 </resources>
