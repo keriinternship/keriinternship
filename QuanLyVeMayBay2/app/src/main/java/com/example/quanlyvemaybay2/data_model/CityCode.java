@@ -1,13 +1,13 @@
 package com.example.quanlyvemaybay2.data_model;
 
-public class city_code {
+public class CityCode {
     int city_id;
     String name_city, code;
 
-    public city_code() {
+    public CityCode() {
     }
 
-    public city_code(int city_id, String name_city, String code) {
+    public CityCode(int city_id, String name_city, String code) {
         this.city_id = city_id;
         this.name_city = name_city;
         this.code = code;
@@ -39,6 +39,6 @@ public class city_code {
 
     @Override
     public String toString() {
-        return name_city + "(" + code + ")" ;
+        return name_city + " (" + code + ")" ;
     }
 }

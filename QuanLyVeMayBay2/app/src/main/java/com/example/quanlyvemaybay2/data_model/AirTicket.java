@@ -1,19 +1,19 @@
 package com.example.quanlyvemaybay2.data_model;
 
-public class air_ticket {
+public class AirTicket {
     private  int id;
     private  String diemdi, diemden, gioxp, gioden,giatien, ngaydi,ngayden ,company_id,planes_id;
 
-    public air_ticket(int id,
-                      String diemdi,
-                      String diemden,
-                      String gioxp,
-                      String gioden,
-                      String giatien,
-                      String ngaydi,
-                      String ngayden,
-                      String company_id,
-                      String planes_id) {
+    public AirTicket(int id,
+                     String diemdi,
+                     String diemden,
+                     String gioxp,
+                     String gioden,
+                     String giatien,
+                     String ngaydi,
+                     String ngayden,
+                     String company_id,
+                     String planes_id) {
         this.id = id;
         this.diemdi = diemdi;
         this.diemden = diemden;

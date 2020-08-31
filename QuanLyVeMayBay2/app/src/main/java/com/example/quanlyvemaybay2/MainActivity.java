@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_findplane)
+                R.id.nav_findplane)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -58,19 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 switch (id) {
                     case R.id.nav_findplane: {
                         Toast.makeText(MainActivity.this, "Find plane clicked!", Toast.LENGTH_SHORT).show();
-                    }
-                    break;
-
-                    case R.id.nav_home: {
-                        Toast.makeText(MainActivity.this, "Home clicked!", Toast.LENGTH_SHORT).show();
-                    }
-                    break;
-                    case R.id.nav_gallery: {
-                        Toast.makeText(MainActivity.this, "Gallery clicked!", Toast.LENGTH_SHORT).show();
-                    }
-                    break;
-                    case R.id.nav_slideshow: {
-                        Toast.makeText(MainActivity.this, "Slideshow clicked!", Toast.LENGTH_SHORT).show();
                     }
                     break;
                 }

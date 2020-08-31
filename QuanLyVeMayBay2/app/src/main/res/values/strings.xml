@@ -39,7 +39,6 @@
     <string name="lblEmail">Email: sale@keri.vn</string>
     <string name="lblHotline">Hotline: 028 3715 0068 (8h30-18h00) </string>
     <string name="lblTacGia"> Tác Giả</string>
-    <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
     <!-- End -->
     <!-- String for information_flight_layout -->
     <string name="tv_money">$2,775,000</string>
@@ -81,9 +80,15 @@
     <string name="tv_So1"> 1</string>
     <string name="tv_So0"> 0</string>
     <string name="tv_chondemden">Chọn điểm đến</string>
+
+    <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
+
     <string name="btnTieptuc">Tiếp tục </string>
+
 
     <!-- Dialog -->
     <string name="chon">CHỌN</string>
     <string name="huy">HỦY</string>
+
+    <string name="result_findplanes">Kết quả tìm kiếm</string>
 </resources>

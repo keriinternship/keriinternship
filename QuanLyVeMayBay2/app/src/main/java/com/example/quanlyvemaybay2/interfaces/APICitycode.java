@@ -1,16 +1,15 @@
-package com.example.quanlyvemaybay2.interFace;
+package com.example.quanlyvemaybay2.interfaces;
 
-import com.example.quanlyvemaybay2.data_model.city_code;
+import com.example.quanlyvemaybay2.data_model.CityCode;
 
 import java.util.List;
 
 import retrofit2.Call;
-import retrofit2.http.Field;
 import retrofit2.http.GET;
 
 public interface APICitycode {
     // GET students from server
     // Server return json array
     @GET("/QL_Planes/api_citycode.php")
-    Call<List<city_code>> getApi_citycode();
+    Call<List<CityCode>>getApi_citycode();
 }

@@ -1,7 +1,7 @@
 package com.example.quanlyvemaybay2.utils;
 
 import com.example.quanlyvemaybay2.Retrofit.RetrofitClient;
-import com.example.quanlyvemaybay2.interFace.APICitycode;
+import com.example.quanlyvemaybay2.interfaces.APICitycode;
 
 
 public class ApiCityCodeUtils {
