@@ -73,10 +73,8 @@ public class FindPlanResultFragment extends Fragment {
             public void onResponse(Call<List<AirTicket>> call, Response<List<AirTicket>> response) {
                 try {
                     String result = "";
-
                     for (int i = 0; i < response.body().size(); i++) {
                         arrayListAirTicket.add(response.body().get(i));
-
                     }
                     airTicketAdapter = new AirTicketAdapter(getContext(), arrayListAirTicket);
                     listItem.setAdapter(airTicketAdapter);
@@ -85,7 +83,6 @@ public class FindPlanResultFragment extends Fragment {
                     e.printStackTrace();
                 }
             }
-
             @Override
             public void onFailure(Call<List<AirTicket>> call, Throwable t) {
                 Log.d("onFailure", t.toString());

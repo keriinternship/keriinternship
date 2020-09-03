@@ -19,12 +19,10 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
     private Context context;
     private ArrayList<AirTicket> ticketList;
 
-
     public AirTicketAdapter(Context context, ArrayList<AirTicket> ticketList) {
         this.context = context;
         this.ticketList = ticketList;
     }
-
     @NonNull
     @Override
     public AirTicketViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -66,7 +64,6 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
             }
         });
     }
-
     @Override
     public int getItemCount() {
         return ticketList.size();

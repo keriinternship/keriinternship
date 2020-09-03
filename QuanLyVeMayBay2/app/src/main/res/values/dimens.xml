@@ -5,14 +5,14 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_margin">5dp</dimen>
     <dimen name="layout_marginRight">10sp</dimen>
     <dimen name="layout_marginRight_result">5sp</dimen>
-    <dimen name="margin">5dp</dimen>
     <dimen name="textSize">20sp</dimen>
     <dimen name="tv_textSize">25sp</dimen>
     <dimen name="tv_textSize1">20sp</dimen>
     <dimen name="tv_textSize2">18sp</dimen>
-    <dimen name="tv_textSize3">12sp</dimen>
+    <dimen name="tv_textSize3">15sp</dimen>
     <dimen name="margin_bottom_title_navigation">8dp</dimen>
     <dimen name="text_lable_navigation">18sp</dimen>
     <dimen name="margin_find_plane">8dp</dimen>

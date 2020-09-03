@@ -52,8 +52,6 @@ public class CityCodeAdapter extends RecyclerView.Adapter<CityCodeAdapter.CityCo
             }
         });
 
-
-
     }
 
     @Override

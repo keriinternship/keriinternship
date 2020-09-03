@@ -27,6 +27,7 @@
     <string name="lblFind">Tìm vé máy bay</string>
     <string name="lblfindcode">Tra Cứu Mã Giữ Chỗ</string>
     <string name="lblThongTin">Trợ Giúp</string>
+    <string name="lblShare">Chia sẻ ứng dụng</string>
     <string name="lblMadatcho">Mã số đặt chỗ *</string>
     <string name="lblSurname">Họ (ví dụ: Nguyễn) *</string>
     <string name="lblLastName">Tên đệm và Tên (ví dụ: Văn A) *</string>
@@ -42,15 +43,18 @@
     <!-- End -->
     <!-- String for information_flight_layout -->
     <string name="tv_money">$2,775,000</string>
-    <string name="tv_chonchuyenkhac">Chọn chuyến khác</string>
+    <string name="tv_chonchuyenkhac">Chuyến Khác</string>
     <string name="lblThongtinchuyenbay">Thông tin chuyến bay</string>
     <string name="lblChieudi">Chiều đi</string>
     <string name="lblChieuve">Chiều về</string>
-    <string name="lblDate">Saturday, 24 June 2017</string>
+    <string name="lblDate">Saturday, 24 June 2020</string>
+    <string name="lblDatecv">Saturday, 25 June 2020</string>
     <string name="tv_Noichon">Hà Nội</string>
-    <string name="tv_Noichon1">Hồ Chí Minh</string>
-    <string name="tv_time"> 12:00 </string>
-    <string name="tv_Date"> 24 Jun </string>
+    <string name="tv_Noichon1">Buôn Ma Thuột</string>
+    <string name="tv_timekh"> 12:00 </string>
+    <string name="tv_timekt"> 13:00 </string>
+    <string name="tv_Datekh"> 24 Jun </string>
+    <string name="tv_Datekt"> 25 Jun </string>
     <string name="tv_Diemxp"> Hà Nội (HN) </string>
     <string name="tv_Diemkt"> Hồ Chí Minh (HCM) </string>
     <string name="tv_Mave"> BL-211-357 </string>
@@ -82,10 +86,7 @@
     <string name="tv_chondemden">Chọn điểm đến</string>
 
     <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
-
     <string name="btnTieptuc">Tiếp tục </string>
-
-
     <!-- Dialog -->
     <string name="chon">CHỌN</string>
     <string name="huy">HỦY</string>
