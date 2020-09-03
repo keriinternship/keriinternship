@@ -16,12 +16,101 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
     <!--information_flight_layout-->
-    <style name="tv_chuyenkhacmoney">
+    <!--Style for fragment_information_layout -->
+    <style name="tv_Title">
+        <item name="android:textSize">@dimen/tv_textSize</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorGraymo</item>
+        <item name="android:background">@color/colorOrange</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-            <item name="android:gravity">right</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="tv_Title1">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="tv_Information">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+    <!--END-->
+    <!--Style for Fragment_slideshow-->
+    <style name="tv_chieudi_chieuve">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:textSize">@dimen/tv_textSize1</item>
+    </style>
+    <style name="tv_diadiem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tv_time">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">@dimen/tv_textSize2</item>
         <item name="android:textColor">@color/colorOrange</item>
     </style>
+    <style name="tv_money">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:textSize">@dimen/tv_textSize2</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="btn_chuyenkhac">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/tv_textSize3</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/colorGraymo</item>
+    </style>
+    <style name="tv_titel_result">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+    <style name="tv_money_result">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="ln_money_result">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom</item>
 
+
+
+
+
+    </style>
+    <!--End-->
 </resources>

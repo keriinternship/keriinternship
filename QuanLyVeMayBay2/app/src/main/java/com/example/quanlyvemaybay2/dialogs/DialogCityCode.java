@@ -2,12 +2,10 @@ package com.example.quanlyvemaybay2.dialogs;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -19,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
 import com.example.quanlyvemaybay2.adapter.CityCodeAdapter;
-import com.example.quanlyvemaybay2.data_model.CityCode;
+import com.example.quanlyvemaybay2.model.CityCode;
 import com.example.quanlyvemaybay2.divider.DividerItemDecoration;
 import com.example.quanlyvemaybay2.interfaces.APICitycode;
 import com.example.quanlyvemaybay2.interfaces.CityCodeInterface;

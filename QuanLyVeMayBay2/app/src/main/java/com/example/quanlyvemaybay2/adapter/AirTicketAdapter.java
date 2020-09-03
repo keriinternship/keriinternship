@@ -11,8 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
-import com.example.quanlyvemaybay2.data_model.AirTicket;
-import com.example.quanlyvemaybay2.interfaces.CityCodeInterface;
+import com.example.quanlyvemaybay2.model.AirTicket;
 
 import java.util.ArrayList;
 

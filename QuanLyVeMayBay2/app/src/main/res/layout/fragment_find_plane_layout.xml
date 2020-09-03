@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGraymo">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:layout_margin="@dimen/margin_find_plane"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/lnDenDi"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/btngGroup"
             android:layout_marginTop="@dimen/margin_bottom"
             android:layout_marginBottom="@dimen/margin_bottom"
@@ -36,8 +36,6 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="left">
-
-
                     <TextView
                         android:id="@+id/lblDiemDi"
                         android:layout_width="wrap_content"
@@ -51,9 +49,7 @@
                         android:layout_marginStart="@dimen/marginLeft"
                         android:contentDescription="@string/lblDiemDi"
                         app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
-
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -64,9 +60,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:backgroundTint="@color/colorGraymo"
-
                         android:gravity="start"
-
                         android:text="@string/lblDiemDi"
                         android:textColor="@color/colorOrange"
                         android:textSize="16sp" />
@@ -130,7 +124,6 @@
                 </LinearLayout>
 
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -150,153 +143,11 @@
             </LinearLayout>
         </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/lnNgayDiVe"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lnDenDi"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-
-            android:layout_marginEnd="@dimen/margin_end"
-
-
-            android:backgroundTint="@color/colorOrange"
-            android:layout_weight="1"
-
-            android:background="@color/colorWhite"
-            android:orientation="vertical">
-
-            <TextView
-                android:textColor="@color/colorGraymo"
-                android:id="@+id/lblNgayDi"
-                android:layout_margin="@dimen/margin_find_plane"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lblNgayDi" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorGraymo"
-                android:layout_marginStart="5dp"
-
-                android:layout_marginEnd="5dp"
-
-                android:layout_marginBottom="5dp"
-
-
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgvCalendar1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:contentDescription="@string/chooseNgayDi"
-                    app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
-
-                <Button
-                    android:id="@+id/edtNgayDi"
-
-                    android:backgroundTint="@color/colorGraymo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorOrange"
-
-
-                    android:inputType="date"
-
-                    android:labelFor="@id/edtNgayDi" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/margin_end"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorOrange"
-            android:background="@color/colorWhite"
-            android:orientation="vertical">
-
-            <TextView
-                android:textColor="@color/colorGraymo"
-                android:id="@+id/lblNgayDen"
-                android:layout_margin="@dimen/margin_find_plane"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lblNgayDen" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_height="wrap_content"
-                android:background="@color/colorGraymo"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgvCalendar2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/chooseNgayDi"
-                    app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
-
-                <Button
-                    android:id="@+id/edtNgayDen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:backgroundTint="@color/colorGraymo"
-                    android:textColor="@color/colorOrange" 
-
-                    android:inputType="date"
-                    android:labelFor="@id/edtNgayDen" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lnHanhKhach"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:background="@color/colorOrange"
-        android:layout_below="@id/lnNgayDiVe"
-        android:layout_marginTop="@dimen/margin_bottom"
-        android:orientation="vertical">
-
-        <LinearLayout
+            android:id="@+id/lnNgayDiVe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_find_plane"
-            tools:ignore="UselessParent">
-
-            <TextView
-                android:textColor="@color/colorGraymo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lblHK" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_below="@id/lnDenDi"
             android:baselineAligned="false"
             android:orientation="horizontal">
 
@@ -305,22 +156,46 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/margin_end"
                 android:layout_weight="1"
-                android:background="@color/colorGraymo"
-                android:layout_margin="@dimen/margin_find_plane"
+                android:background="@color/colorWhite"
+                android:backgroundTint="@color/colorOrange"
                 android:orientation="vertical">
+
                 <TextView
-                    android:textColor="@color/colorOrange"
+                    android:id="@+id/lblNgayDi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_find_plane"
+                    android:text="@string/lblNgayDi"
+                    android:textColor="@color/colorGraymo" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/lblNguoiLon" />
-                <EditText
-                    android:id="@+id/edtNguoiLon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:text="@string/defaultNguoiLon"
-                    tools:ignore="LabelFor" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_find_plane"
+                    android:background="@color/colorGraymo"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgvCalendar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/chooseNgayDi"
+                        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+                    <Button
+                        android:id="@+id/edtNgayDi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGraymo"
+                        android:inputType="date"
+
+                        android:labelFor="@id/edtNgayDi"
+                        android:textColor="@color/colorOrange" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -328,85 +203,188 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/margin_end"
                 android:layout_weight="1"
-                android:background="@color/colorGraymo"
-                android:layout_margin="@dimen/margin_find_plane"
+                android:background="@color/colorWhite"
+                android:backgroundTint="@color/colorOrange"
                 android:orientation="vertical">
 
                 <TextView
-                    android:textColor="@color/colorOrange"
+                    android:id="@+id/lblNgayDen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_find_plane"
+                    android:text="@string/lblNgayDen"
+                    android:textColor="@color/colorGraymo" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/lblTreEm" />
-                <EditText
-                    android:id="@+id/edtTreEm"
-                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_find_plane"
+                    android:background="@color/colorGraymo"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgvCalendar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/chooseNgayDi"
+                        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+                    <Button
+                        android:id="@+id/edtNgayDen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:backgroundTint="@color/colorGraymo"
+                        android:inputType="date"
+
+                        android:labelFor="@id/edtNgayDen"
+                        android:textColor="@color/colorOrange" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnHanhKhach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/lnNgayDiVe"
+            android:layout_marginTop="@dimen/margin_bottom"
+            android:background="@color/colorOrange"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_find_plane"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:text="@string/defaultTreEm"
-                    tools:ignore="LabelFor" />
+                    android:text="@string/lblHK"
+                    android:textColor="@color/colorGraymo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_find_plane"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraymo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblNguoiLon"
+                        android:textColor="@color/colorOrange" />
+
+                    <EditText
+                        android:id="@+id/edtNguoiLon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:text="@string/defaultNguoiLon"
+                        tools:ignore="LabelFor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_find_plane"
+                    android:layout_marginStart="@dimen/margin_end"
+                    android:layout_weight="1"
+                    android:background="@color/colorGraymo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblTreEm"
+                        android:textColor="@color/colorOrange" />
+
+                    <EditText
+                        android:id="@+id/edtTreEm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:text="@string/defaultTreEm"
+                        tools:ignore="LabelFor" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnFindPlanes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lnHanhKhach"
-        android:layout_marginTop="@dimen/margin_bottom"
-        android:text="@string/btnFindPlanes"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/labelFindPlane"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="@dimen/margin_find_plane"
-        android:layout_marginTop="@dimen/margin_find_plane"
-        android:layout_marginEnd="@dimen/margin_find_plane"
-        android:layout_marginBottom="@dimen/margin_find_plane"
-        android:text="@string/find_plane_label"
-        android:textSize="20sp"
-        android:textColor="@color/colorOrange"
-        android:textStyle="bold"/>
-
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/btngGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/labelFindPlane"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        app:checkedButton="@id/btnKhuHoi"
-        app:selectionRequired="true"
-        app:singleSelection="true">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnKhuHoi"
-            android:layout_width="0dp"
-            android:textColor="@color/colorGraymo"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/khuhoi"
+            android:id="@+id/btnFindPlanes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lnHanhKhach"
+            android:layout_marginTop="@dimen/margin_bottom"
+            android:text="@string/btnFindPlanes"
+            android:textSize="20sp" />
 
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:textSize="@dimen/textSize_Button" />
+        <TextView
+            android:id="@+id/labelFindPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_find_plane"
+            android:layout_marginTop="@dimen/margin_find_plane"
+            android:layout_marginEnd="@dimen/margin_find_plane"
+            android:layout_marginBottom="@dimen/margin_find_plane"
+            android:text="@string/find_plane_label"
+            android:textColor="@color/colorOrange"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/btngGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelFindPlane"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:checkedButton="@id/btnKhuHoi"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnKhuHoi"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/khuhoi"
+
+                android:textColor="@color/colorGraymo"
+                android:textSize="@dimen/textSize_Button" />
 
 
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMotChieu"
-            android:layout_width="0dp"
-            android:textColor="@color/colorGraymo"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/motchieu"
-            android:textSize="@dimen/textSize_Button"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
-
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMotChieu"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/motchieu"
+                android:textColor="@color/colorGraymo"
+                android:textSize="@dimen/textSize_Button" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
     </RelativeLayout>
 </RelativeLayout>

@@ -1,6 +1,6 @@
 package com.example.quanlyvemaybay2.interfaces;
 
-import com.example.quanlyvemaybay2.data_model.AirTicket;
+import com.example.quanlyvemaybay2.model.AirTicket;
 
 import java.util.List;
 import retrofit2.Call;

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
+
+    android:padding="10dp"
     android:background="@color/colorGraymo"
     android:orientation="vertical">
 
@@ -13,140 +14,94 @@
         android:layout_weight="1">
 
         <TextView
-            android:textSize="@dimen/textSize"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:textColor="@color/colorGraymo"
-            android:background="@color/colorOrange"
-            android:text="@string/lblLienhechungtoi"
-            android:layout_width="match_parent"
+            style="@style/tv_Title"
             android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_height="match_parent"/>
+            android:text="@string/lblLienhechungtoi" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/colorWhite"
-        android:orientation="vertical"
-        android:layout_weight="4">
-        <TextView
-            android:text="@string/lblBuy"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textColor="@color/colorOrange"
-            android:textSize="@dimen/tv_textSize"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:drawableLeft="@drawable/ic_baseline_home_24"
-            android:gravity="left|center"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:text="@string/lblDiaChi"
-            android:textColor="@color/colorOrange"
-            android:textSize="@dimen/textSize" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_baseline_language_24"
-            android:text="@string/lblWeb"
-            android:gravity="center"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textColor="@color/colorOrange"
-            android:textSize="@dimen/textSize"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:gravity="center"
-            android:text="@string/lblEmail"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textColor="@color/colorOrange"
-            android:textSize="@dimen/textSize" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_baseline_phone_24"
-            android:gravity="center"
-            android:text="@string/lblHotline"
-            android:textColor="@color/colorOrange"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textSize="18sp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-        <TextView
-            android:textSize="@dimen/textSize"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:textColor="@color/colorGraymo"
-            android:background="@color/colorOrange"
-            android:text="@string/lblTacGia"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_height="match_parent"/>
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
-        <TextView
-            android:text="@string/lblQuestion"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textColor="@color/colorOrange"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            style="@style/tv_Title1"
+            android:layout_weight="1"
+            android:text="@string/lblBuy" />
+
+        <TextView
+            style="@style/tv_Information"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:text="@string/lblDiaChi" />
+
+        <TextView
+            style="@style/tv_Information"
             android:layout_weight="1"
             android:drawableLeft="@drawable/ic_baseline_language_24"
-            android:text="@string/lblWeb"
-            android:gravity="center"
+            android:text="@string/lblWeb" />
+
+        <TextView
+            style="@style/tv_Information"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:text="@string/lblEmail" />
+
+        <TextView
+            style="@style/tv_Information"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:text="@string/lblHotline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/tv_Title"
             android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textColor="@color/colorOrange"
-            android:textSize="@dimen/textSize"/>
+            android:text="@string/lblTacGia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="4"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_Title1"
+            android:layout_weight="3"
+
+            android:text="@string/lblQuestion" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:gravity="center"
-            android:text="@string/lblEmail"
             android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_language_24"
+            android:gravity="center"
+            android:text="@string/lblWeb"
             android:textColor="@color/colorOrange"
             android:textSize="@dimen/textSize" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            style="@style/tv_Information"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:text="@string/lblEmail" />
+        <TextView
+            style="@style/tv_Information"
             android:layout_weight="1"
             android:drawableLeft="@drawable/ic_baseline_phone_24"
-            android:gravity="center"
-            android:text="@string/lblHotline"
-            android:textColor="@color/colorOrange"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:textSize="18sp" />
+            android:text="@string/lblHotline" />
     </LinearLayout>
-
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.quanlyvemaybay2.data_model;
+package com.example.quanlyvemaybay2.model;
 
 public class AirTicket {
     private  int id;

@@ -18,7 +18,7 @@ import com.example.quanlyvemaybay2.ui.findplane.SharedViewModel;
 import com.example.quanlyvemaybay2.utils.ApiServiceUtils;
 import com.example.quanlyvemaybay2.R;
 import com.example.quanlyvemaybay2.adapter.AirTicketAdapter;
-import com.example.quanlyvemaybay2.data_model.AirTicket;
+import com.example.quanlyvemaybay2.model.AirTicket;
 import com.example.quanlyvemaybay2.interfaces.APIService;
 
 import java.util.ArrayList;

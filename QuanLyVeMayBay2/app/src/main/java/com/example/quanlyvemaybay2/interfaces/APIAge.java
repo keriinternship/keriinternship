@@ -1,6 +1,6 @@
 package com.example.quanlyvemaybay2.interfaces;
 
-import com.example.quanlyvemaybay2.data_model.Age;
+import com.example.quanlyvemaybay2.model.Age;
 
 
 
