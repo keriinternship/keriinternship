@@ -18,10 +18,6 @@
             android:icon="@drawable/ic_baseline_flight_24"
             android:title="@string/lblThongtinchuyenbay" />
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/ic_baseline_share_24"
-            android:title="@string/lblShare" />
-        <item
             android:id="@+id/nav_infor"
             android:icon="@drawable/ic_baseline_info"
             android:title="@string/lblThongTin" />

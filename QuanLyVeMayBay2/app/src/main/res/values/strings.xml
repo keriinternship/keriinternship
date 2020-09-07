@@ -79,8 +79,8 @@
     <string name="ma160"> 160 </string>
     <string name="gioXuatphat"> 15:50 </string>
     <string name="gioDen">14:00</string>
-    <string name="money"> 299.000 đ </string>
-    <string name="btnChiTiet"> Xem chi tiết </string>
+    <string name="money">  299.000 đ </string>
+    <string name="btnChiTiet"> Chi Tiết </string>
     <string name="tv_So1"> 1</string>
     <string name="tv_So0"> 0</string>
     <string name="tv_chondemden">Chọn điểm đến</string>
@@ -90,6 +90,20 @@
     <!-- Dialog -->
     <string name="chon">CHỌN</string>
     <string name="huy">HỦY</string>
-
     <string name="result_findplanes">Kết quả tìm kiếm</string>
+    <!--   Dialog_infor_person_layout -->
+
+    <string name="tv_HangMayBay">Viet Jet</string>
+    <string name="tv_tong">Tổng: 730.000 đ </string>
+    <string name="tv_sotien"> 730.000 đ </string>
+    <string name="tv_SG"> SGN </string>
+    <string name="tv_HAN"> HAN </string>
+    <string name="tv_timeXP"> 6:20 </string>
+    <string name="tv_timeKT"> 8:30 </string>
+    <string name="tv_maMaybay"> VN6002 </string>
+    <string name="tv_thongtinlienhe"> Thông Tin Liên Hệ </string>
+    <string name="tv_thongtinkhachhang"> Thông Tin Khách Hàng </string>
+    <string name="btn_nguoi"> Người lớn 1 </string>
+
+    <!--    End-->
 </resources>

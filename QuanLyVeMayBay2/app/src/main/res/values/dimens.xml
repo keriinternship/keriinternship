@@ -21,6 +21,7 @@
     <dimen name="margin_bottom">30dp</dimen>
     <dimen name="layout_marginBottom">10dp</dimen>
     <dimen name="margin_end">5dp</dimen>
+    <dimen name="layout_marginEnd">10dp</dimen>
     <dimen name="pading_left">10dp</dimen>
     <dimen name="text_size_item_city_code">20sp</dimen>
     <dimen name="padding_item_city_code">15dp</dimen>

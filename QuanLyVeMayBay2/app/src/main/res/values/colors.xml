@@ -12,7 +12,7 @@
     <color name="colorBlack">#000000</color>
     <!-- <color name="colorGrayDam">#eeeeee</color> -->
     <color name="colorGrayLot">#F2F6F4F4</color>
-    <color name="colorGraymo">#eeeeee</color>
+    <color name="colorGraymo">#E6E6E6</color>
     <color name="colorGrayDam">#787676</color>
-
+    <color name="colorXanh">#097d90</color>
 </resources>
