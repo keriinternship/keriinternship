@@ -109,7 +109,6 @@ public class DialogCityCode extends DialogFragment implements CityCodeInterface{
                 button.setText(CityCodeAdapter.cityCode_static.getCode());
             }
         });
-
         return alertDialog.create();
     }
 

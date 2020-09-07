@@ -24,6 +24,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.quanlyvemaybay2.R;
 import com.example.quanlyvemaybay2.dialogs.DialogCityCode;
+import com.example.quanlyvemaybay2.dialogs.DialogInforClients;
 import com.example.quanlyvemaybay2.ui.findplanresult.FindPlanResultFragment;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
@@ -209,14 +210,15 @@ public class FindPlaneFragment extends Fragment {
         btnFindPlanes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBundle = new Bundle();
-                mBundle.putBoolean("?motchieu", isMotChieu);
-                mBundle.putString("diemdi", btnMaDiemDi.getText().toString());
-                mBundle.putString("diemden", btnMaDiemDen.getText().toString());
-                mBundle.putString("ngaydi", edtNgayDi.getText().toString());
+//                mBundle = new Bundle();
+//                mBundle.putBoolean("?motchieu", isMotChieu);
+//                mBundle.putString("diemdi", btnMaDiemDi.getText().toString());
+//                mBundle.putString("diemden", btnMaDiemDen.getText().toString());
+//                mBundle.putString("ngaydi", edtNgayDi.getText().toString());
+//                NavHostFragment.findNavController(FindPlaneFragment.this).navigate(R.id.action_nav_findplane_to_nav_result_findplanes, mBundle);
 
-
-                NavHostFragment.findNavController(FindPlaneFragment.this).navigate(R.id.action_nav_findplane_to_nav_result_findplanes, mBundle);
+                DialogInforClients dialogInforClients = new DialogInforClients(getActivity(), android.R.style.Theme_Light);
+                dialogInforClients.show();
             }
         });
 

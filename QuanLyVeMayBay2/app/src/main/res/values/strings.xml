@@ -92,7 +92,6 @@
     <string name="huy">HỦY</string>
     <string name="result_findplanes">Kết quả tìm kiếm</string>
     <!--   Dialog_infor_person_layout -->
-
     <string name="tv_HangMayBay">Viet Jet</string>
     <string name="tv_tong">Tổng: 730.000 đ </string>
     <string name="tv_sotien"> 730.000 đ </string>
@@ -104,6 +103,8 @@
     <string name="tv_thongtinlienhe"> Thông Tin Liên Hệ </string>
     <string name="tv_thongtinkhachhang"> Thông Tin Khách Hàng </string>
     <string name="btn_nguoi"> Người lớn 1 </string>
-
     <!--    End-->
+    <!-- Dialog_infor_contact_layout   -->
+
+    <!--   End -->
 </resources>

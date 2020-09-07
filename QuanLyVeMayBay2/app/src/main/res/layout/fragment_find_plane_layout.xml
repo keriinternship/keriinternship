@@ -345,7 +345,7 @@
             android:layout_marginTop="@dimen/margin_find_plane"
             android:layout_marginEnd="@dimen/margin_find_plane"
             android:layout_marginBottom="@dimen/margin_find_plane"
-            android:text="@string/find_plane_label"
+            android:text= "@string/find_plane_label"
             android:textColor="@color/colorOrange"
             android:textSize="20sp"
             android:textStyle="bold" />
