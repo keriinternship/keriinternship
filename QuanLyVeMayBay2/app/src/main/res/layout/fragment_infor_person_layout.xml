@@ -255,6 +255,4 @@
             android:text="@string/btnTieptuc"
             android:textColor="@color/colorWhite" />
     </LinearLayout>
-
-
 </LinearLayout>
