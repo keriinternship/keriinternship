@@ -460,8 +460,8 @@
             android:gravity="right"
             android:text="@string/tv_Luuy"
             android:textStyle="bold" />
-        <Button
-            android:id="@+id/btnTieptuc"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tieptuc"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"

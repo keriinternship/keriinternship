@@ -153,19 +153,21 @@
             android:baselineAligned="false">
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
+                android:id="@+id/btn_Huy"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:text="Huỷ"
-                android:textColor="@color/colorOrange"
-                android:background="@drawable/mybutton"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/my_button_bg"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 />
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
+                android:id="@+id/btn_Dongy"
                 android:text="Đồng ý"
-                android:textColor="@color/colorOrange"
-                android:background="@drawable/mybutton"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/my_button_bg"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
         </LinearLayout>

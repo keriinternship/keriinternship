@@ -11,9 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.quanlyvemaybay2.interfaces.OnClickToShowInforPerson;
 import com.example.quanlyvemaybay2.ui.findplane.SharedViewModel;
 import com.example.quanlyvemaybay2.utils.ApiServiceUtils;
 import com.example.quanlyvemaybay2.R;
@@ -28,7 +30,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class FindPlanResultFragment extends Fragment {
+public class FindPlanResultFragment extends Fragment implements OnClickToShowInforPerson {
     RecyclerView listItem;
     private APIService mAPIService;
     TextView tv_maDi, tv_maDen, tv_Date,tv_AgeNguoiLon,tv_AgeTreem;
@@ -43,12 +45,19 @@ public class FindPlanResultFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.find_airticket_layout, container, false);
+
+        return root;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         init();
         getAllAirsticker();
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         listItem.setLayoutManager(layoutManager);
-        return root;
     }
+
     public  void  init()
     {
         tv_maDi = root.findViewById(R.id.tv_maDi);
@@ -76,17 +85,25 @@ public class FindPlanResultFragment extends Fragment {
                     for (int i = 0; i < response.body().size(); i++) {
                         arrayListAirTicket.add(response.body().get(i));
                     }
-                    airTicketAdapter = new AirTicketAdapter(getContext(), arrayListAirTicket);
-                    listItem.setAdapter(airTicketAdapter);
+
                 } catch (Exception e) {
                     Log.d("onResponse", "Error");
                     e.printStackTrace();
                 }
+                airTicketAdapter = new AirTicketAdapter(getContext(), arrayListAirTicket, FindPlanResultFragment.this);
+                listItem.setAdapter(airTicketAdapter);
             }
+
             @Override
             public void onFailure(Call<List<AirTicket>> call, Throwable t) {
                 Log.d("onFailure", t.toString());
             }
         });
+
+    }
+
+    @Override
+    public void onClickToShow() {
+        NavHostFragment.findNavController(FindPlanResultFragment.this).navigate(R.id.action_nav_result_findplanes_to_nav_infor_person);
     }
 }

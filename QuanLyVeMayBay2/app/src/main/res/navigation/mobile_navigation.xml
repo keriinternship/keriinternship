@@ -51,6 +51,9 @@
         android:name="com.example.quanlyvemaybay2.ui.findplanresult.FindPlanResultFragment"
         android:label="@string/result_findplanes"
         tools:layout="@layout/find_airticket_layout">
+        <action
+            android:id="@+id/action_nav_result_findplanes_to_nav_infor_person"
+            app:destination="@id/nav_infor_person" />
     </fragment>
 	
 	<fragment
@@ -58,5 +61,17 @@
         android:name="com.example.quanlyvemaybay2.ui.inforFly.InFlyFragment"
         android:label="@string/lblThongtinchuyenbay"
         tools:layout="@layout/information_flight_layout">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_infor_person"
+        android:name="com.example.quanlyvemaybay2.ui.inforperson.InforPerson"
+        android:label="@string/lblthongtindonhang"
+        tools:layout="@layout/fragment_infor_person_layout">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pay"
+        android:name="com.example.quanlyvemaybay2.ui.inforperson.InforPerson"
+        android:label="@string/lblPhuongthuc"
+        tools:layout="@layout/fragment_pay_layout">
     </fragment>
 </navigation>
