@@ -2,12 +2,10 @@ package com.example.quanlyvemaybay2.dialogs;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -19,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
 import com.example.quanlyvemaybay2.adapter.CityCodeAdapter;
-import com.example.quanlyvemaybay2.data_model.CityCode;
+import com.example.quanlyvemaybay2.model.CityCode;
 import com.example.quanlyvemaybay2.divider.DividerItemDecoration;
 import com.example.quanlyvemaybay2.interfaces.APICitycode;
 import com.example.quanlyvemaybay2.interfaces.CityCodeInterface;
@@ -41,6 +39,9 @@ public class DialogCityCode extends DialogFragment implements CityCodeInterface{
     Button button;
     View view;
 
+
+
+
     public DialogCityCode newInstance(Button button) {
         
         DialogCityCode fragment = new DialogCityCode();
@@ -60,7 +61,9 @@ public class DialogCityCode extends DialogFragment implements CityCodeInterface{
         //
         rvCityCode = view.findViewById(R.id.rvCityCode);
         //
-        mApiCitycode = ApiCityCodeUtils.getApiCitycode();
+        mApiCitycode = (APICitycode) ApiCityCodeUtils.getApiCitycode();
+
+
         mApiCitycode.getApi_citycode().enqueue(new Callback<List<CityCode>>() {
             @Override
             public void onResponse(Call<List<CityCode>> call, Response<List<CityCode>> response) {
@@ -83,13 +86,11 @@ public class DialogCityCode extends DialogFragment implements CityCodeInterface{
                 Log.d("onFailure", t.toString());
             }
         });
-//        cityCodes.add(new city_code(1,"AAA", "AAA"));
-//        cityCodes.add(new city_code(1,"AAA", "AAA"));
-//        cityCodes.add(new city_code(1,"AAA", "AAA"));
-//        cityCodes.add(new city_code(1,"AAA", "AAA"));
-//
-//        adapter = new CityCodeAdapter(getContext(), cityCodes);
-//        rvCityCode.setAdapter(adapter);
+
+
+
+        adapter = new CityCodeAdapter(getContext(), cityCodes);
+        rvCityCode.setAdapter(adapter);
         rvCityCode.addItemDecoration(new DividerItemDecoration(getResources().getDrawable(R.drawable.divider, getActivity().getTheme())));
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
         rvCityCode.setLayoutManager(layoutManager);

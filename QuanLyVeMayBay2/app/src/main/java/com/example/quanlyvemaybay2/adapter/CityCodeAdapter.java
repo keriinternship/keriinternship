@@ -2,7 +2,6 @@ package com.example.quanlyvemaybay2.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
-import com.example.quanlyvemaybay2.data_model.CityCode;
+import com.example.quanlyvemaybay2.model.CityCode;
 import com.example.quanlyvemaybay2.interfaces.CityCodeInterface;
 
 import java.util.ArrayList;

@@ -14,12 +14,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.quanlyvemaybay2.ui.findplane.SharedViewModel;
+import com.example.quanlyvemaybay2.ui.findplane.FindPlaneViewModel;
 import com.example.quanlyvemaybay2.utils.ApiServiceUtils;
 import com.example.quanlyvemaybay2.R;
 import com.example.quanlyvemaybay2.adapter.AirTicketAdapter;
-import com.example.quanlyvemaybay2.data_model.AirTicket;
-import com.example.quanlyvemaybay2.interfaces.APIService;
+import com.example.quanlyvemaybay2.model.AirTicket;
+import com.example.quanlyvemaybay2.remote.APIService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ public class FindPlanResultFragment extends Fragment {
     View root;
     AirTicketAdapter airTicketAdapter;
     ArrayList<AirTicket> arrayListAirTicket = new ArrayList<AirTicket>();
-    private SharedViewModel sharedViewModel;
+    private FindPlaneViewModel findPlaneViewModel;
     private Bundle mBundle = new Bundle();
     String diemDi, diemDen, ngayDi;
     @Nullable

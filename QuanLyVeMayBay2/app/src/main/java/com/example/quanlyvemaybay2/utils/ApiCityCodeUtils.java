@@ -5,7 +5,7 @@ import com.example.quanlyvemaybay2.interfaces.APICitycode;
 
 
 public class ApiCityCodeUtils {
-    public static final String BASE_URL = "http://10.0.2.2";
+    public static final String BASE_URL = "http://localhost";
 
     private ApiCityCodeUtils() {
     }

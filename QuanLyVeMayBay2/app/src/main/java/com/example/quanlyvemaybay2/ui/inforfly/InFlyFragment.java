@@ -1,4 +1,4 @@
-package com.example.quanlyvemaybay2.ui.inforFly;
+package com.example.quanlyvemaybay2.ui.inforfly;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
