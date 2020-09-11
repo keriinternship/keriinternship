@@ -24,7 +24,7 @@
             android:id="@+id/imgvDiemDi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin"
+            android:layout_margin="@dimen/layout_margin"
             android:contentDescription="@string/lblDiemDi"
             app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
         <TextView
@@ -86,34 +86,34 @@
                     android:layout_width="wrap_content"
                     android:text="@string/tv_So1"
                     android:textStyle="italic"
-                    android:layout_margin="@dimen/margin"
+                    android:layout_margin="@dimen/layout_margin"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="@string/nguoilon"
                     android:textStyle="italic"
-                    android:layout_margin="@dimen/margin"
+                    android:layout_margin="@dimen/layout_margin"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/lblNguoilon"
                     android:layout_width="wrap_content"
                     android:text="@string/daugach"
                     android:textStyle="italic"
-                    android:layout_margin="@dimen/margin"
+                    android:layout_margin="@dimen/layout_margin"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/tv_AgeTreem"
                     android:layout_width="wrap_content"
                     android:text="@string/tv_So0"
                     android:textStyle="italic"
-                    android:layout_margin="@dimen/margin"
+                    android:layout_margin="@dimen/layout_margin"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/lblTreEm"
                     android:textStyle="italic"
                     android:layout_width="wrap_content"
                     android:text="@string/treem"
-                    android:layout_margin="@dimen/margin"
+                    android:layout_margin="@dimen/layout_margin"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
         </LinearLayout>

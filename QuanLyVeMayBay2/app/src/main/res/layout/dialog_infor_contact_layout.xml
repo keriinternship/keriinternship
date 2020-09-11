@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/labelFindPlane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:text="@string/tv_thongtinlienhe"
+        android:textColor="@color/colorOrange"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_thongtin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/labelFindPlane"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tv_danhxung"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="@dimen/margin_bottom"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_group_24" />
+
+            <EditText
+                android:id="@+id/edt_Danhxung"
+                android:hint="Danh xưng"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_Ho"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/tv_danhxung"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_account_circle_24" />
+            <EditText
+                android:id="@+id/edt_Ho"
+                android:layout_width="0dp"
+                android:hint="Họ"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_tendemvaho"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/ln_Ho"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_account_circle_24" />
+            <EditText
+                android:id="@+id/edt_HovaTen"
+                android:layout_width="0dp"
+                android:hint="Tên đệm và tên"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_diachi"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/ln_tendemvaho"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_place_24" />
+            <EditText
+                android:id="@+id/edt_Diachi"
+                android:layout_width="0dp"
+                android:hint="Địa chỉ"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln_diachi"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100px"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_email_24" />
+            <EditText
+                android:id="@+id/edt_Email"
+                android:hint="Email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_thongtin"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_nut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:baselineAligned="false">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:id="@+id/btn_Huy"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Huỷ"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/my_button_bg"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:id="@+id/btn_Dongy"
+                android:text="Đồng ý"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/my_button_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

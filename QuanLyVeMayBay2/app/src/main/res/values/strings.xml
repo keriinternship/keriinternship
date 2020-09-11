@@ -27,6 +27,7 @@
     <string name="lblFind">Tìm vé máy bay</string>
     <string name="lblfindcode">Tra Cứu Mã Giữ Chỗ</string>
     <string name="lblThongTin">Trợ Giúp</string>
+    <string name="lblShare">Chia sẻ ứng dụng</string>
     <string name="lblMadatcho">Mã số đặt chỗ *</string>
     <string name="lblSurname">Họ (ví dụ: Nguyễn) *</string>
     <string name="lblLastName">Tên đệm và Tên (ví dụ: Văn A) *</string>
@@ -42,21 +43,24 @@
     <!-- End -->
     <!-- String for information_flight_layout -->
     <string name="tv_money">$2,775,000</string>
-    <string name="tv_chonchuyenkhac">Chọn chuyến khác</string>
+    <string name="tv_chonchuyenkhac">Chuyến Khác</string>
     <string name="lblThongtinchuyenbay">Thông tin chuyến bay</string>
     <string name="lblChieudi">Chiều đi</string>
     <string name="lblChieuve">Chiều về</string>
-    <string name="lblDate">Saturday, 24 June 2017</string>
+    <string name="lblDate">Saturday, 24 June 2020</string>
+    <string name="lblDatecv">Saturday, 25 June 2020</string>
     <string name="tv_Noichon">Hà Nội</string>
-    <string name="tv_Noichon1">Hồ Chí Minh</string>
-    <string name="tv_time"> 12:00 </string>
-    <string name="tv_Date"> 24 Jun </string>
+    <string name="tv_Noichon1">Buôn Ma Thuột</string>
+    <string name="tv_timekh"> 12:00 </string>
+    <string name="tv_timekt"> 13:00 </string>
+    <string name="tv_Datekh"> 24 Jun </string>
+    <string name="tv_Datekt"> 25 Jun </string>
     <string name="tv_Diemxp"> Hà Nội (HN) </string>
     <string name="tv_Diemkt"> Hồ Chí Minh (HCM) </string>
     <string name="tv_Mave"> BL-211-357 </string>
     <string name="tv_Thongtingiave"> Thông tin giá vé </string>
     <string name="tv_Giave"> Giá Vé</string>
-    <string name="tv_Thue"> Thuế và phí </string>
+    <string name="tv_Thue"> Thuế &#38; phí </string>
     <string name="tv_Tong"> Tổng cộng</string>
     <string name="tv_MoneyGiave">$4,185,000</string>
     <string name="tv_MoneyThue">$1,120,500</string>
@@ -75,20 +79,42 @@
     <string name="ma160"> 160 </string>
     <string name="gioXuatphat"> 15:50 </string>
     <string name="gioDen">14:00</string>
-    <string name="money"> 299.000 đ </string>
-    <string name="btnChiTiet"> Xem chi tiết </string>
+    <string name="money">  299.000 đ </string>
+    <string name="btnChiTiet"> Chi Tiết </string>
     <string name="tv_So1"> 1</string>
     <string name="tv_So0"> 0</string>
     <string name="tv_chondemden">Chọn điểm đến</string>
 
     <string name="lblQuestion">MỌI THẮC MẮC ĐÓNG GÓP LIÊN QUAN ĐẾN ỨNG DỤNG BẠN CÓ THỂ LIÊN HỆ QUA</string>
-
     <string name="btnTieptuc">Tiếp tục </string>
-
-
     <!-- Dialog -->
     <string name="chon">CHỌN</string>
     <string name="huy">HỦY</string>
-
     <string name="result_findplanes">Kết quả tìm kiếm</string>
+    <!--   infor_person_layout -->
+    <string name="tv_HangMayBay">Viet Jet</string>
+    <string name="tv_tong">Tổng: 730.000 đ </string>
+    <string name="tv_sotien"> 730.000 đ </string>
+    <string name="tv_SG"> SGN </string>
+    <string name="tv_HAN"> HAN </string>
+    <string name="tv_timeXP"> 6:20 </string>
+    <string name="tv_timeKT"> 8:30 </string>
+    <string name="tv_maMaybay"> VN6002 </string>
+    <string name="tv_thongtinlienhe"> Thông Tin Liên Hệ </string>
+    <string name="tv_thongtinkhachhang"> Thông Tin Khách Hàng </string>
+    <string name="lblthongtindonhang">Thông tin đơn hàng</string>
+    <string name="btn_nguoi"> Người lớn 1 </string>
+    <!--    End-->
+    <!-- Dialog_infor_contact_layout   -->
+
+    <!--   End -->
+<!--    Fragment pay layout-->
+    <string name="lblPhuongthuc">Phương thức thanh toán</string>
+    <string name="tv_madonhang">Mã đơn hàng: 2919</string>
+    <string name="tv_tonggia">Tổng giá: 730.000 đ</string>
+    <string name="tv_thanhtoandaily">Thanh toán tại đại ly</string>
+    <string name="tv_chuyenkhoandaily">Chuyển khoản qua tại ngân hàng</string>
+    <string name="tv_hoantat">Hoàn tất</string>
+    <string name="tv_lienhe">Quý khách vui lòng liên hệ văn phòng của <b> Mua vé rẻ (Lưu ý: Sau 18h thì liên hệ sdt 028 3715 0068) tai: </b> </string>
+    <string name="lbl_DiaChi">Tòa nhà SBI, CVPM Quang Trung, P. Tân Chánh Hiệp, Quận 12, Tp.HCM, Việt Nam.</string>
 </resources>
