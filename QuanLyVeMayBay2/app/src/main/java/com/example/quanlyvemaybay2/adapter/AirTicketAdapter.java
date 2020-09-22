@@ -7,6 +7,8 @@ import android.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,15 +23,23 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.quanlyvemaybay2.R;
 
+import com.example.quanlyvemaybay2.interfaces.APIPlane;
 import com.example.quanlyvemaybay2.model.AirTicket;
 
 import com.example.quanlyvemaybay2.interfaces.OnClickToShowInforPerson;
 import com.example.quanlyvemaybay2.model.AirTicket;
+import com.example.quanlyvemaybay2.model.CityCode;
+import com.example.quanlyvemaybay2.model.Plane;
 import com.example.quanlyvemaybay2.ui.findplane.FindPlaneFragment;
 import com.example.quanlyvemaybay2.ui.inforperson.InforPerson;
 
 
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirTicketViewHolder> {
     private Context context;
@@ -38,7 +48,8 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
     FragmentTransaction fragmentTransaction;
     private OnClickToShowInforPerson onClick;
     Intent intent;
-
+    APIPlane apiPlane;
+    int planes_id;
     public AirTicketAdapter(Context context, ArrayList<AirTicket> ticketList, OnClickToShowInforPerson onClick) {
         this.context = context;
         this.ticketList = ticketList;
@@ -56,14 +67,35 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
 
     @Override
     public void onBindViewHolder(@NonNull AirTicketViewHolder holder, int position) {
-        AirTicket AirTicket = ticketList.get(position);
+        final AirTicket airTicket = ticketList.get(position);
 
-        holder.tv_maVe.setText(AirTicket.getPlanes_id());
-        holder.tv_giaTien.setText(AirTicket.getGiatien());
-        holder.tv_maDi.setText(AirTicket.getDiemdi());
-        holder.tv_gioXP.setText(AirTicket.getGioxp());
-        holder.tv_maDen.setText(AirTicket.getDiemden());
-        holder.tv_gioDen.setText(AirTicket.getGioden());
+        planes_id = Integer.parseInt(airTicket.getPlanes_id());
+//        apiPlane.getApi_plane(planes_id).enqueue(new Callback<List<Plane>>() {
+//            @Override
+//            public void onResponse(Call<List<Plane>> call, Response<List<Plane>> response) {
+////                holder.tv_maVe.setText(response.body().get(0).getPlanes_id());
+//
+//                try {
+//                    Log.d("planes", response.body().get(0).getPlanes_id() +"");
+//
+//                } catch (Exception e) {
+//                    Log.d("onResponse", "Error");
+//                    e.printStackTrace();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<Plane>> call, Throwable t) {
+//                Log.d("onFailure", t.toString());
+//            }
+//        });
+
+        holder.tv_maVe.setText(airTicket.getPlanes_id());
+        holder.tv_giaTien.setText(airTicket.getGiatien());
+        holder.tv_maDi.setText(airTicket.getDiemdi());
+        holder.tv_gioXP.setText(airTicket.getGioxp());
+        holder.tv_maDen.setText(airTicket.getDiemden());
+        holder.tv_gioDen.setText(airTicket.getGioden());
 
 
         holder.btnXemchitiet.setOnClickListener(new View.OnClickListener() {

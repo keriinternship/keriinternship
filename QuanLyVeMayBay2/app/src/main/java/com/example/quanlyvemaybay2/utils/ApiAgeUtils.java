@@ -4,7 +4,7 @@ import com.example.quanlyvemaybay2.Retrofit.RetrofitClient;
 
 
 public class ApiAgeUtils {
-    public static final String BASE_URL = "http://localhost:82";
+    public static final String BASE_URL = "http://10.0.2.2";
 
     private ApiAgeUtils() {
     }

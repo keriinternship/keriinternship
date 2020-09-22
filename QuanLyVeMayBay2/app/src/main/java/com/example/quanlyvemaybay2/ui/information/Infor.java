@@ -1,15 +1,15 @@
 package com.example.quanlyvemaybay2.ui.information;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+        import android.os.Bundle;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+        import androidx.annotation.NonNull;
+        import androidx.annotation.Nullable;
+        import androidx.fragment.app.Fragment;
 
-import com.example.quanlyvemaybay2.R;
+        import com.example.quanlyvemaybay2.R;
 
 public class Infor extends Fragment {
     @Nullable

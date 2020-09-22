@@ -14,22 +14,12 @@ import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.quanlyvemaybay2.R;
-import com.example.quanlyvemaybay2.databinding.FragmentFindPlaneLayoutBinding;
 import com.example.quanlyvemaybay2.dialogs.DialogCityCode;
-
-import com.example.quanlyvemaybay2.model.CityCode;
 import com.example.quanlyvemaybay2.viewmodel.CityCodeViewModel;
-import com.example.quanlyvemaybay2.viewmodel.ViewModelFactory;
-
-import com.example.quanlyvemaybay2.dialogs.DialogInforClients;
-import com.example.quanlyvemaybay2.ui.findplanresult.FindPlanResultFragment;
-
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 
@@ -37,7 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import javax.inject.Inject;
+//import com.example.quanlyvemaybay2.databinding.FragmentFindPlaneLayoutBinding;
 
 
 public class FindPlaneFragment extends Fragment {
@@ -169,17 +159,11 @@ public class FindPlaneFragment extends Fragment {
         // Set backgroundTint cho button Khứ hồi và Một chiều khi khởi chạy app
         switch (btnTogGroup.getCheckedButtonId()) {
             case R.id.btnKhuHoi: {
-                btnKhuHoi.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorOrange, getContext().getTheme())));
-                btnKhuHoi.setTextColor(getResources().getColor(R.color.colorWhite, getContext().getTheme()));
-                btnMotChieu.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite, getContext().getTheme())));
-                btnMotChieu.setTextColor(getResources().getColor(R.color.colorOrange, getContext().getTheme()));
+                setColorForBtnKhuHoi();
             }
             break;
             case R.id.btnMotChieu: {
-                btnMotChieu.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorOrange, getContext().getTheme())));
-                btnMotChieu.setTextColor(getResources().getColor(R.color.colorWhite, getContext().getTheme()));
-                btnKhuHoi.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite, getContext().getTheme())));
-                btnKhuHoi.setTextColor(getResources().getColor(R.color.colorOrange, getContext().getTheme()));
+                setColorForBtnMotChieu();
             }
             break;
             default:
@@ -191,10 +175,7 @@ public class FindPlaneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // set backgroundTint cho button Khứ hồi và Một chiều
-                btnKhuHoi.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorOrange, getContext().getTheme())));
-                btnKhuHoi.setTextColor(getResources().getColor(R.color.colorWhite, getContext().getTheme()));
-                btnMotChieu.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite, getContext().getTheme())));
-                btnMotChieu.setTextColor(getResources().getColor(R.color.colorOrange, getContext().getTheme()));
+                setColorForBtnKhuHoi();
                 edtNgayDen.setEnabled(true);
                 isMotChieu = false;
             }
@@ -205,10 +186,7 @@ public class FindPlaneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // set backgroundTint cho button Khứ hồi và Một chiều
-                btnMotChieu.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorOrange, getContext().getTheme())));
-                btnMotChieu.setTextColor(getResources().getColor(R.color.colorWhite, getContext().getTheme()));
-                btnKhuHoi.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite, getContext().getTheme())));
-                btnKhuHoi.setTextColor(getResources().getColor(R.color.colorOrange, getContext().getTheme()));
+                setColorForBtnMotChieu();
                 edtNgayDen.setEnabled(false);
                 isMotChieu = true;
             }
@@ -235,5 +213,19 @@ public class FindPlaneFragment extends Fragment {
     private void openDialogToChooseCityCode(Button button) {
         DialogCityCode dialogCityCode = new DialogCityCode().newInstance(button);
         dialogCityCode.show(getActivity().getSupportFragmentManager(), "Choose city code");
+    }
+
+    public void setColorForBtnKhuHoi(){
+        btnKhuHoi.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorOrange, getContext().getTheme())));
+        btnKhuHoi.setTextColor(getResources().getColor(R.color.colorWhite, getContext().getTheme()));
+        btnMotChieu.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite, getContext().getTheme())));
+        btnMotChieu.setTextColor(getResources().getColor(R.color.colorOrange, getContext().getTheme()));
+    }
+
+    public void setColorForBtnMotChieu(){
+        btnMotChieu.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorOrange, getContext().getTheme())));
+        btnMotChieu.setTextColor(getResources().getColor(R.color.colorWhite, getContext().getTheme()));
+        btnKhuHoi.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorWhite, getContext().getTheme())));
+        btnKhuHoi.setTextColor(getResources().getColor(R.color.colorOrange, getContext().getTheme()));
     }
 }

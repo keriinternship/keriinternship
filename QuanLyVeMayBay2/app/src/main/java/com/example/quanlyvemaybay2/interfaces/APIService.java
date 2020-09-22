@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface APIService {
-    // GET students from server
+    // GET airticket from server
     // Server return json array
     @GET("/QL_Planes/api_air.php")
     Call<List<AirTicket>>getApi_air(@Query("diemdi") String diemdi, @Query("diemden") String diemden, @Query("ngaydi") String ngaydi);
