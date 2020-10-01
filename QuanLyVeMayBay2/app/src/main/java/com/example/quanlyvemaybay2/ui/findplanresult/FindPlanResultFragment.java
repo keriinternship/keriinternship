@@ -33,14 +33,16 @@ import retrofit2.Response;
 public class FindPlanResultFragment extends Fragment implements OnClickToShowInforPerson {
     RecyclerView listItem;
     private APIService mAPIService;
-    TextView tv_maDi, tv_maDen, tv_Date,tv_AgeNguoiLon,tv_AgeTreem;
-    Button btnHangHK , btnGiaCuoc;
+    TextView tv_maDi, tv_maDen, tv_Date, tv_AgeNguoiLon, tv_AgeTreem;
+    Button btnHangHK, btnGiaCuoc;
     View root;
     AirTicketAdapter airTicketAdapter;
     ArrayList<AirTicket> arrayListAirTicket = new ArrayList<AirTicket>();
     private FindPlaneViewModel findPlaneViewModel;
     private Bundle mBundle = new Bundle();
-    String diemDi, diemDen, ngayDi;
+    String diemDi, diemDen, ngayDi, ngayDen;
+    private boolean isMotChieu;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -58,8 +60,7 @@ public class FindPlanResultFragment extends Fragment implements OnClickToShowInf
         listItem.setLayoutManager(layoutManager);
     }
 
-    public  void  init()
-    {
+    public void init() {
         tv_maDi = root.findViewById(R.id.tv_maDi);
         tv_maDen = root.findViewById(R.id.tv_maDen);
         tv_Date = root.findViewById(R.id.tv_Date);
@@ -76,34 +77,69 @@ public class FindPlanResultFragment extends Fragment implements OnClickToShowInf
         diemDi = getArguments().getString("diemdi");
         diemDen = getArguments().getString("diemden");
         ngayDi = getArguments().getString("ngaydi");
-        Log.d("testPassData", diemDi + diemDen + ngayDi);
-        mAPIService.getApi_air(diemDi, diemDen, ngayDi).enqueue(new Callback<List<AirTicket>>() {
-            @Override
-            public void onResponse(Call<List<AirTicket>> call, Response<List<AirTicket>> response) {
-                try {
-                    String result = "";
-                    for (int i = 0; i < response.body().size(); i++) {
-                        arrayListAirTicket.add(response.body().get(i));
+        isMotChieu = getArguments().getBoolean("?motchieu");
+
+        if (isMotChieu == true) {
+
+            Log.d("testPassData", diemDi + diemDen + ngayDi);
+            mAPIService.getApi_air(diemDi, diemDen, ngayDi).enqueue(new Callback<List<AirTicket>>() {
+                @Override
+                public void onResponse(Call<List<AirTicket>> call, Response<List<AirTicket>> response) {
+                    try {
+                        String result = "";
+                        for (int i = 0; i < response.body().size(); i++) {
+                            arrayListAirTicket.add(response.body().get(i));
+                        }
+
+                    } catch (Exception e) {
+                        Log.d("onResponse", "Error");
+                        e.printStackTrace();
                     }
-
-                } catch (Exception e) {
-                    Log.d("onResponse", "Error");
-                    e.printStackTrace();
+                    airTicketAdapter = new AirTicketAdapter(getContext(), arrayListAirTicket, FindPlanResultFragment.this, isMotChieu);
+                    listItem.setAdapter(airTicketAdapter);
                 }
-                airTicketAdapter = new AirTicketAdapter(getContext(), arrayListAirTicket, FindPlanResultFragment.this);
-                listItem.setAdapter(airTicketAdapter);
-            }
 
-            @Override
-            public void onFailure(Call<List<AirTicket>> call, Throwable t) {
-                Log.d("onFailure", t.toString());
-            }
-        });
+                @Override
+                public void onFailure(Call<List<AirTicket>> call, Throwable t) {
+                    Log.d("onFailure", t.toString());
+                }
+            });
+        } else {
+            ngayDen = getArguments().getString("ngayden");
+
+            mAPIService.getApi_air(diemDen, diemDi, ngayDen).enqueue(new Callback<List<AirTicket>>() {
+                @Override
+                public void onResponse(Call<List<AirTicket>> call, Response<List<AirTicket>> response) {
+                    try {
+                        String result = "";
+                        for (int i = 0; i < response.body().size(); i++) {
+                            arrayListAirTicket.add(response.body().get(i));
+                        }
+
+                    } catch (Exception e) {
+                        Log.d("onResponse", "Error");
+                        e.printStackTrace();
+                    }
+                    isMotChieu = true;
+                    airTicketAdapter = new AirTicketAdapter(getContext(), arrayListAirTicket, FindPlanResultFragment.this, isMotChieu, ngayDen, diemDen);
+                    listItem.setAdapter(airTicketAdapter);
+                }
+
+                @Override
+                public void onFailure(Call<List<AirTicket>> call, Throwable t) {
+                    Log.d("onFailure", t.toString());
+                }
+            });
+        }
 
     }
 
     @Override
-    public void onClickToShow() {
-        NavHostFragment.findNavController(FindPlanResultFragment.this).navigate(R.id.action_nav_result_findplanes_to_nav_infor_person);
+    public void onClickToShow(boolean isMotChieu) {
+        if (isMotChieu == true) {
+            NavHostFragment.findNavController(FindPlanResultFragment.this).navigate(R.id.action_nav_result_findplanes_to_nav_infor_person);
+        } else {
+            NavHostFragment.findNavController(FindPlanResultFragment.this).navigate(R.id.action_nav_result_findplanes_self, mBundle);
+        }
     }
 }

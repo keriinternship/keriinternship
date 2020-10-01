@@ -45,7 +45,6 @@ public class FindPlaneFragment extends Fragment {
     private CityCodeViewModel cityCodeViewModel;
     Bundle mBundle;
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -200,6 +199,9 @@ public class FindPlaneFragment extends Fragment {
                 mBundle.putString("diemdi", btnMaDiemDi.getText().toString());
                 mBundle.putString("diemden", btnMaDiemDen.getText().toString());
                 mBundle.putString("ngaydi", edtNgayDi.getText().toString());
+                if(isMotChieu == false){
+                    mBundle.putString("ngayden", edtNgayDen.getText().toString());
+                }
                 NavHostFragment.findNavController(FindPlaneFragment.this).navigate(R.id.action_nav_findplane_to_nav_result_findplanes, mBundle);
 
 //                DialogInforClients dialogInforClients = new DialogInforClients(getActivity(), android.R.style.Theme_Light);

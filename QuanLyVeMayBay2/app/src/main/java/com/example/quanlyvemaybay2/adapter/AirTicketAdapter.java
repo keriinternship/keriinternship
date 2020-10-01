@@ -50,16 +50,30 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
     Intent intent;
     APIPlane apiPlane;
     int planes_id;
-    public AirTicketAdapter(Context context, ArrayList<AirTicket> ticketList, OnClickToShowInforPerson onClick) {
+    boolean isMotChieu;
+    String ngayDi, diemDi;
+
+    public AirTicketAdapter(Context context, ArrayList<AirTicket> ticketList, OnClickToShowInforPerson onClick, boolean isMotChieu, String ngayDi, String diemDi) {
         this.context = context;
         this.ticketList = ticketList;
         this.onClick = onClick;
+        this.isMotChieu = isMotChieu;
+        this.ngayDi = ngayDi;
+        this.diemDi = diemDi;
     }
+
+    public AirTicketAdapter(Context context, ArrayList<AirTicket> ticketList, OnClickToShowInforPerson onClick, boolean isMotChieu) {
+        this.context = context;
+        this.ticketList = ticketList;
+        this.onClick = onClick;
+        this.isMotChieu = isMotChieu;
+    }
+
     @NonNull
     @Override
     public AirTicketViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view  = inflater.inflate(R.layout.item_airticket_layout, parent, false);
+        View view = inflater.inflate(R.layout.item_airticket_layout, parent, false);
 
         return new AirTicketViewHolder(view, onClick);
 
@@ -112,15 +126,17 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
             }
         });
     }
+
     @Override
     public int getItemCount() {
         return ticketList.size();
     }
 
     public class AirTicketViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_maVe,  tv_giaTien ,tv_maDi , tv_gioXP,tv_maDen, tv_gioDen;
+        TextView tv_maVe, tv_giaTien, tv_maDi, tv_gioXP, tv_maDen, tv_gioDen;
         Button btnChon, btnXemchitiet;
         OnClickToShowInforPerson onClick;
+
         public AirTicketViewHolder(@NonNull View itemView, final OnClickToShowInforPerson onClick) {
             super(itemView);
             tv_maVe = itemView.findViewById(R.id.tv_maVe);
@@ -129,16 +145,17 @@ public class AirTicketAdapter extends RecyclerView.Adapter<AirTicketAdapter.AirT
             tv_maDi = itemView.findViewById(R.id.tv_maDi);
             tv_maDen = itemView.findViewById(R.id.tv_maDen);
             tv_gioXP = itemView.findViewById(R.id.tv_gioXP);
-            btnChon =  itemView.findViewById(R.id.btnChon);
-            btnXemchitiet =   itemView.findViewById(R.id.btnXem);
+            btnChon = itemView.findViewById(R.id.btnChon);
+            btnXemchitiet = itemView.findViewById(R.id.btnXem);
             this.onClick = onClick;
 
             btnChon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    onClick.onClickToShow();
+                    onClick.onClickToShow(isMotChieu);
                 }
             });
+
         }
 
     }
