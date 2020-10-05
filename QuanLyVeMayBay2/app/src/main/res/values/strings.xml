@@ -104,6 +104,10 @@
     <string name="tv_thongtinkhachhang"> Thông Tin Khách Hàng </string>
     <string name="lblthongtindonhang">Thông tin đơn hàng</string>
     <string name="btn_nguoi"> Người lớn 1 </string>
+    <string-array name="danhxung">
+    <item> Ông </item>
+    <item> Bà </item></string-array>
+
     <!--    End-->
     <!-- Dialog_infor_contact_layout   -->
 
